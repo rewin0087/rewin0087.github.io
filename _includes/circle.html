@@ -1,0 +1,12 @@
+<div class="circle-content"></div>
+<script>
+  $(document).ready(function() {
+    for(let a = 0; a < 50; a++) {
+      const circleContainer = $('<div class="circle-container"></div>');
+      const circle = $('<div class="circle"></div>');
+      circleContainer.append(circle);
+
+      $('.circle-content').append(circleContainer);
+    }
+  })
+</script>

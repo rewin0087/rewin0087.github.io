@@ -1,0 +1,32 @@
+header {
+  .header-content {
+    border-bottom: 1px solid #ddd;
+    background-color: #e54b47;
+  }
+}
+
+.banner {
+  position: relative;
+  overflow: hidden;
+
+  .banner-cover {
+    background-image: url(/assets/images/banner-bg.jpg);
+    background-repeat: no-repeat;
+    width: 100%;
+    background-size: auto;
+    background-position: right center;
+    height: 45vh;
+
+    h1 {
+      font-size: 3.5rem;
+
+      span {
+        color: #e54b47;
+      }
+    }
+
+    h4 {
+      color: #47515a;
+    }
+  }
+}
