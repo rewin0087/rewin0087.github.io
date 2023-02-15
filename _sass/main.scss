@@ -1,8 +1,31 @@
+$primary-color: #e54b47;
+$text-color: #47515a;
+$border-color: #ddd;
+$black-color: #000;
+$white-color: #fff;
+
 header {
   .header-content {
-    border-bottom: 1px solid #ddd;
-    background-color: #e54b47;
+    border-bottom: 1px solid $border-color;
   }
+}
+
+.text-content {
+  color: $text-color;
+  font-size: 1.5em;
+}
+
+.title {
+  font-size: 4em;
+  font-weight: normal;
+}
+
+.white-title {
+  color: $white-color;
+}
+
+.black-title {
+  color: $black-color;
 }
 
 .banner {
@@ -16,17 +39,52 @@ header {
     background-size: auto;
     background-position: right center;
     height: 45vh;
+    margin-top: 5%;
 
     h1 {
-      font-size: 3.5rem;
+      font-size: 4.5rem;
 
       span {
-        color: #e54b47;
+        color: $primary-color;
       }
     }
 
-    h4 {
-      color: #47515a;
+    h3 {
+      color: $text-color;
+
+      span {
+        color: $primary-color;
+      }
     }
+  }
+}
+
+.about-me {
+  padding: 10em 0;
+  background-color: $black-color;
+  outline: 1px solid $primary-color;
+
+  .text-content {
+    color: $white-color;
+  }
+}
+
+.my-career {
+  padding: 10em 0;
+
+  .text-content {
+    color: $black-color;
+  }
+}
+
+.code-logo {
+  font-size: 10em;
+  font-weight: bold;
+  p {
+    letter-spacing: -10px;
+  }
+
+  span {
+    color: $primary-color;
   }
 }
