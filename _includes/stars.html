@@ -1,0 +1,13 @@
+<div class="stars-content"></div>
+<script>
+  $(document).ready(function() {
+  const container = $('<div class="stars"></div>');
+
+    for(let a = 0; a < 100; a++) {
+      const item = $('<div class="star"></div>');
+      container.append(item);
+
+      $('.stars-content').append(container);
+    }
+  })
+</script>
