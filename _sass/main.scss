@@ -37,9 +37,8 @@ header {
     background-repeat: no-repeat;
     width: 100%;
     background-size: auto;
-    background-position: 80%;
-    height: 53vh;
-    margin-top: 5%;
+    background-position: 80% 22%;
+    height: 45vh;
     background-attachment: fixed;
 
     h1 {
@@ -59,13 +58,13 @@ header {
     }
 
     .txt-tech {
-      margin-top: 30%;
+      margin-top: 10%;
     }
   }
 }
 
 .about-me {
-  padding: 10em 0;
+  padding: 15em 0;
   background-color: $black-color;
   outline: 1px solid $primary-color;
 
@@ -83,7 +82,7 @@ header {
 }
 
 .code-logo {
-  font-size: 10em;
+  font-size: 15em;
   font-weight: bold;
   p {
     letter-spacing: -10px;
