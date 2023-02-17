@@ -61,6 +61,10 @@ header {
 
   .text-content {
     color: $white-color !important;
+
+    span {
+      color: $primary-color;
+    }
   }
 }
 
