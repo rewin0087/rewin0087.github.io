@@ -48,6 +48,20 @@ header {
   }
 }
 
+.sm-text {
+  font-size: 1.5em;
+  font-style: italic;
+}
+
+.md-text {
+  font-size: 2em;
+  font-weight: bold;
+}
+
+.lg-text {
+  font-size: 2em;
+}
+
 .banner {
   position: relative;
   overflow: hidden;
@@ -108,12 +122,15 @@ header {
   }
 }
 
-.list-group {
-  &.dark-list {
-    .list-group-item {
-      background: $black-color;
+.my-work {
+  &.dark {
+    p {
       color: $white-color;
-      padding: 1em;
+      margin: 0;
+      height: 3em;
+      display: flex;
+      justify-content: center;
+      align-items: center;
 
       &:hover {
         background: $primary-color

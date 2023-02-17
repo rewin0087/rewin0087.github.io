@@ -13,30 +13,80 @@
   <body>
     <header>
       <div class="header-content pt-4 pb-4">
-  <div class="container">
-    <ul class="nav justify-content-center">
-      <li class="nav-item">
-        <a class="nav-link active" href="/">
-          <img src="/assets/images/home.png" alt="Home" />
-        </a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="https://www.linkedin.com/in/erwin-seribo-baab306a/" target="_blank">
-          <img src="/assets/images/linkedin.png" alt="Linkedin" />
-        </a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="https://github.com/rewin0087" target="_blank">
-          <img src="/assets/images/github.png" alt="Github" />
-        </a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="mailto:erwin_rulezzz87@yahoo.com">
-          <img src="/assets/images/email.png" alt="Send me email" />
-        </a>
-      </li>
-    </ul>
-  </div>
+  <header class="navbar navbar-expand-lg bd-navbar sticky-top">
+  <nav class="container-xxl bd-gutter flex-wrap flex-lg-nowrap" aria-label="Main navigation">
+      <div class="d-lg-none" style="width: 1.5rem;"></div>
+
+    <a class="navbar-brand p-0 me-0 me-lg-2" href="/" aria-label="Bootstrap">
+      <img src="/assets/images/logo.png" alt="Erwin Seribo" />
+    </a>
+
+    <div class="d-flex">
+      <a href="#" class="d-flex d-lg-none order-3 p-2" type="button" data-bs-toggle="offcanvas" data-bs-target="#bdNavbar" aria-controls="bdNavbar" aria-label="Toggle navigation">
+        <img src="/assets/images/dots.png", alt="Menu">
+      </a>
+    </div>
+
+    <div class="offcanvas-lg offcanvas-end flex-grow-1" tabindex="-1" id="bdNavbar" aria-labelledby="bdNavbarOffcanvasLabel" data-bs-scroll="true">
+      <div class="offcanvas-header px-4 pb-0">
+        <h5 class="offcanvas-title text-white" id="bdNavbarOffcanvasLabel">Bootstrap</h5>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close" data-bs-target="#bdNavbar"></button>
+      </div>
+
+      <div class="offcanvas-body p-4 pt-0 p-lg-0">
+        <hr class="d-lg-none text-white-50">
+        <ul class="navbar-nav flex-row flex-wrap bd-navbar-nav align-items-center">
+          <li class="nav-item col-6 col-lg-auto">
+            <a class="nav-link py-2 px-0 px-lg-2" href="#home">Home</a>
+          </li>
+          <li class="nav-item col-6 col-lg-auto">
+            <a class="nav-link py-2 px-0 px-lg-2 active" aria-current="true" href="#about">About Me</a>
+          </li>
+          <li class="nav-item col-6 col-lg-auto">
+            <a class="nav-link py-2 px-0 px-lg-2" href="#career">Career</a>
+          </li>
+          <li class="nav-item col-6 col-lg-auto">
+            <a class="nav-link py-2 px-0 px-lg-2" href="#expertise">Expertise</a>
+          </li>
+          <li class="nav-item col-6 col-lg-auto">
+            <a class="nav-link py-2 px-0 px-lg-2" href="#skills">Skills</a>
+          </li>
+          <li class="nav-item col-6 col-lg-auto">
+            <a class="nav-link py-2 px-0 px-lg-2" href="#works" >Works</a>
+          </li>
+          <li class="nav-item col-6 col-lg-auto">
+            <a class="nav-link py-2 px-0 px-lg-2" href="#works" >Hire Me!</a>
+          </li>
+        </ul>
+
+        <hr class="d-lg-none text-white-50">
+
+        <ul class="navbar-nav flex-row flex-wrap ms-md-auto">
+          <li class="nav-item col-6 col-lg-auto">
+            <a class="nav-link  py-2 px-0 px-lg-2" href="https://www.linkedin.com/in/erwin-seribo-baab306a/" target="_blank">
+              <img src="/assets/images/linkedin.png" alt="Linkedin" />
+            </a>
+          </li>
+          <li class="nav-item col-6 col-lg-auto">
+            <a class="nav-link py-2 px-0 px-lg-2" href="https://github.com/rewin0087" target="_blank">
+              <img src="/assets/images/github.png" alt="Github" />
+            </a>
+          </li>
+          <li class="nav-item col-6 col-lg-auto">
+            <a class="nav-link py-2 px-0 px-lg-2" href="mailto:erwin_rulezzz87@yahoo.com">
+              <img src="/assets/images/email.png" alt="Send me email" />
+            </a>
+          </li>
+
+          <li class="nav-item py-2 py-lg-1 col-12 col-lg-auto">
+            <div class="vr d-none d-lg-flex h-100 mx-lg-2 black-white"></div>
+            <hr class="d-lg-none my-2 black-white-50">
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</header>
 </div>
     </header>
     <div class="content">
@@ -47,6 +97,7 @@
         <div class="col-md-12 intro-banner">
           <h3>Hi THERE! I AM</h3>
           <h1 class="mb-4">< Erwin Seribo <span>/</span>> </h1>
+          <h1><span>{</span>E<span>}</span></h1>
           <h3>A Passionate <span>Fullstack Software Developer</span></h3>
           <h2 class="txt-tech"><span class="txt-rotate" data-period="2000" data-fixed="I develop Web applications" data-rotate='["I build Websites", "I integrate API", "I develop API", "I build standalone Web client"]'></span></h2>
         </div>
@@ -124,13 +175,25 @@
       <div class="col-md-12">
         <h1 class="white-title title mb-5 text-center">My Expertise</h1>
 
-        <div class="d-flex justify-content-between align-items-sm-center">
-          <img src="/assets/images/rails.png" alt="Ruby on Rails"/>
-          <img src="/assets/images/react.png" alt="React Js"/>
-          <img src="/assets/images/angular.png" alt="Angular Js"/>
-          <img src="/assets/images/vuejs.png" alt="Vue Js"/>
-          <img src="/assets/images/graphql.png" alt="Graphql"/>
-          <img src="/assets/images/docker.jpg" alt="Docker"/>
+        <div class="row d-flex justify-content-between align-items-sm-center">
+          <div class="col mb-5 text-center">
+            <img src="/assets/images/rails.png" alt="Ruby on Rails"/>
+          </div>
+          <div class="col mb-5 text-center">
+            <img src="/assets/images/react.png" alt="React Js"/>
+          </div>
+          <div class="col mb-5 text-center">
+            <img src="/assets/images/angular.png" alt="Angular Js"/>
+          </div>
+          <div class="col mb-5 text-center">
+            <img src="/assets/images/vuejs.png" alt="Vue Js"/>
+          </div>
+          <div class="col mb-5 text-center">
+            <img src="/assets/images/graphql.png" alt="Graphql"/>
+          </div>
+          <div class="col mb-5 text-center">
+            <img src="/assets/images/docker.jpg" alt="Docker"/>
+          </div>
         </div>
       </div>
     </div>
@@ -159,6 +222,67 @@
                   <div class="progress progress-bar-striped" role="progressbar" aria-label="Web development" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">
                     <div class="progress-bar bg-danger progress-bar-striped progress-bar-animated" style="width: 90%">90%</div>
                   </div>
+                </div>
+              </div>
+
+              <div class="row mb-3">
+                <div class="col-md-5">
+                  <p>Agile | Scrum | Kanban (11 years)</p>
+                </div>
+                <div class="col-md-7">
+                  <div class="progress progress-bar-striped" role="progressbar" aria-label="Agile | Scrum | Kanban" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" >
+                    <div class="progress-bar bg-danger progress-bar-striped progress-bar-animated" style="width: 90%">90%</div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="row mb-3">
+                <div class="col-md-5">
+                  <p>Git (10 years)</p>
+                </div>
+                <div class="col-md-7">
+                  <div class="progress progress-bar-striped" role="progressbar" aria-label="Git" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" >
+                    <div class="progress-bar bg-danger progress-bar-striped progress-bar-animated" style="width: 90%">90%</div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="row mb-3">
+                <div class="col-md-5">
+                  <p>AWS (EC2 | RDS | S3 | Route 53 | Cloudfront | ECS | Cloudwatch) (8 years)</p>
+                </div>
+                <div class="col-md-7">
+                  <div class="progress progress-bar-striped" role="progressbar" aria-label="Twitter bootstrap | Materialize | Foundation" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" >
+                    <div class="progress-bar bg-danger progress-bar-striped progress-bar-animated" style="width: 80%">80%</div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="row mb-3">
+                <div class="col-md-5">
+                  <p>Heroku | Digital Ocean | Azure (10 years)</p>
+                </div>
+                <div class="col-md-7">
+                  <div class="progress progress-bar-striped" role="progressbar" aria-label="Heroku | Digital Ocean | Azure" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" >
+                    <div class="progress-bar bg-danger progress-bar-striped progress-bar-animated" style="width: 80%">80%</div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="row mb-3">
+                <div class="col-md-5">
+                  <p>Bash scripting (5 years)</p>
+                </div>
+                <div class="col-md-7">
+                  <div class="progress progress-bar-striped" role="progressbar" aria-label="Bash scripting" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" >
+                    <div class="progress-bar bg-danger progress-bar-striped progress-bar-animated" style="width: 80%">80%</div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="row mb-2">
+                <div class="col">
+                  <h4>Backend skills</h4>
                 </div>
               </div>
 
@@ -197,7 +321,7 @@
 
               <div class="row mb-3">
                 <div class="col-md-5">
-                  <p>Rspec (11 years)</p>
+                  <p>Rspec | Cucumber | Capybara (11 years)</p>
                 </div>
                 <div class="col-md-7">
                   <div class="progress progress-bar-striped" role="progressbar" aria-label="Rspec" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" >
@@ -208,10 +332,10 @@
 
               <div class="row mb-3">
                 <div class="col-md-5">
-                  <p>Agile | Scrum | Kanban (11 years)</p>
+                  <p>REST | SOAP (11 years)</p>
                 </div>
                 <div class="col-md-7">
-                  <div class="progress progress-bar-striped" role="progressbar" aria-label="Agile | Scrum | Kanban" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" >
+                  <div class="progress progress-bar-striped" role="progressbar" aria-label="REST | SOAP" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" >
                     <div class="progress-bar bg-danger progress-bar-striped progress-bar-animated" style="width: 90%">90%</div>
                   </div>
                 </div>
@@ -219,23 +343,40 @@
 
               <div class="row mb-3">
                 <div class="col-md-5">
-                  <p>CI/CD (6 years)</p>
+                  <p>Graphql (6 years)</p>
                 </div>
                 <div class="col-md-7">
-                  <div class="progress progress-bar-striped" role="progressbar" aria-label="CI/CD" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" >
-                    <div class="progress-bar bg-danger progress-bar-striped progress-bar-animated" style="width: 70%">70%</div>
+                  <div class="progress progress-bar-striped" role="progressbar" aria-label="Graphql" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" >
+                    <div class="progress-bar bg-danger progress-bar-striped progress-bar-animated" style="width: 80%">80%</div>
                   </div>
                 </div>
               </div>
 
               <div class="row mb-3">
                 <div class="col-md-5">
-                  <p>Github Actions (1 years)</p>
+                  <p>API | Web services (11 years)</p>
                 </div>
                 <div class="col-md-7">
-                  <div class="progress progress-bar-striped" role="progressbar" aria-label="Github Actions" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" >
-                    <div class="progress-bar bg-danger progress-bar-striped progress-bar-animated" style="width: 70%">70%</div>
+                  <div class="progress progress-bar-striped" role="progressbar" aria-label="Andriod Development" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" >
+                    <div class="progress-bar bg-danger progress-bar-striped progress-bar-animated" style="width: 90%">90%</div>
                   </div>
+                </div>
+              </div>
+
+              <div class="row mb-3">
+                <div class="col-md-5">
+                  <p>Mysql | Postgres | Sqlite | Cassandra | Mariadb (11 years)</p>
+                </div>
+                <div class="col-md-7">
+                  <div class="progress progress-bar-striped" role="progressbar" aria-label="Mysql | Postgres | Sqlite | Cassandra | Mariadb" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" >
+                    <div class="progress-bar bg-danger progress-bar-striped progress-bar-animated" style="width: 80%">80%</div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="row mb-2">
+                <div class="col">
+                  <h4>Frontend skills</h4>
                 </div>
               </div>
 
@@ -329,66 +470,11 @@
 
               <div class="row mb-3">
                 <div class="col-md-5">
-                  <p>Javascript (11 years)</p>
+                  <p>Javascript | Jquery (11 years)</p>
                 </div>
                 <div class="col-md-7">
                   <div class="progress progress-bar-striped" role="progressbar" aria-label="Javascript" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" >
                     <div class="progress-bar bg-danger progress-bar-striped progress-bar-animated" style="width: 90%">90%</div>
-                  </div>
-                </div>
-              </div>
-
-              <div class="row mb-3">
-                <div class="col-md-5">
-                  <p>REST | SOAP (11 years)</p>
-                </div>
-                <div class="col-md-7">
-                  <div class="progress progress-bar-striped" role="progressbar" aria-label="REST | SOAP" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" >
-                    <div class="progress-bar bg-danger progress-bar-striped progress-bar-animated" style="width: 90%">90%</div>
-                  </div>
-                </div>
-              </div>
-
-              <div class="row mb-3">
-                <div class="col-md-5">
-                  <p>Graphql (6 years)</p>
-                </div>
-                <div class="col-md-7">
-                  <div class="progress progress-bar-striped" role="progressbar" aria-label="Graphql" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" >
-                    <div class="progress-bar bg-danger progress-bar-striped progress-bar-animated" style="width: 80%">80%</div>
-                  </div>
-                </div>
-              </div>
-
-              <div class="row mb-3">
-                <div class="col-md-5">
-                  <p>API | Web services (11 years)</p>
-                </div>
-                <div class="col-md-7">
-                  <div class="progress progress-bar-striped" role="progressbar" aria-label="Andriod Development" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" >
-                    <div class="progress-bar bg-danger progress-bar-striped progress-bar-animated" style="width: 90%">90%</div>
-                  </div>
-                </div>
-              </div>
-
-              <div class="row mb-3">
-                <div class="col-md-5">
-                  <p>Git (10 years)</p>
-                </div>
-                <div class="col-md-7">
-                  <div class="progress progress-bar-striped" role="progressbar" aria-label="Git" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" >
-                    <div class="progress-bar bg-danger progress-bar-striped progress-bar-animated" style="width: 90%">90%</div>
-                  </div>
-                </div>
-              </div>
-
-              <div class="row mb-3">
-                <div class="col-md-5">
-                  <p>Mysql | Postgres | Sqlite | Cassandra | Mariadb (11 years)</p>
-                </div>
-                <div class="col-md-7">
-                  <div class="progress progress-bar-striped" role="progressbar" aria-label="Mysql | Postgres | Sqlite | Cassandra | Mariadb" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" >
-                    <div class="progress-bar bg-danger progress-bar-striped progress-bar-animated" style="width: 80%">80%</div>
                   </div>
                 </div>
               </div>
@@ -403,7 +489,36 @@
                   </div>
                 </div>
               </div>
+
+              <div class="row mb-2">
+                <div class="col">
+                  <h4>Automation skills</h4>
+                </div>
+              </div>
+
+              <div class="row mb-3">
+                <div class="col-md-5">
+                  <p>CI/CD (6 years)</p>
+                </div>
+                <div class="col-md-7">
+                  <div class="progress progress-bar-striped" role="progressbar" aria-label="CI/CD" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" >
+                    <div class="progress-bar bg-danger progress-bar-striped progress-bar-animated" style="width: 70%">70%</div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="row mb-3">
+                <div class="col-md-5">
+                  <p>Github Actions (1 years)</p>
+                </div>
+                <div class="col-md-7">
+                  <div class="progress progress-bar-striped" role="progressbar" aria-label="Github Actions" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" >
+                    <div class="progress-bar bg-danger progress-bar-striped progress-bar-animated" style="width: 70%">70%</div>
+                  </div>
+                </div>
+              </div>
             </div>
+
             <div class="col">
               <div class="row mb-5">
                 <div class="col">
@@ -457,17 +572,6 @@
 
               <div class="row mb-3">
                 <div class="col-md-5">
-                  <p>AWS (EC2 | RDS | S3 | Route 53 | Cloudfront | ECS | Cloudwatch) (8 years)</p>
-                </div>
-                <div class="col-md-7">
-                  <div class="progress progress-bar-striped" role="progressbar" aria-label="Twitter bootstrap | Materialize | Foundation" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" >
-                    <div class="progress-bar bg-danger progress-bar-striped progress-bar-animated" style="width: 80%">80%</div>
-                  </div>
-                </div>
-              </div>
-
-              <div class="row mb-3">
-                <div class="col-md-5">
                   <p>Docker | Kubernetes | Helm (5 years)</p>
                 </div>
                 <div class="col-md-7">
@@ -494,28 +598,6 @@
                 </div>
                 <div class="col-md-7">
                   <div class="progress progress-bar-striped" role="progressbar" aria-label="Shopify" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" >
-                    <div class="progress-bar bg-danger progress-bar-striped progress-bar-animated" style="width: 80%">80%</div>
-                  </div>
-                </div>
-              </div>
-
-              <div class="row mb-3">
-                <div class="col-md-5">
-                  <p>Heroku | Digital Ocean | Azure (10 years)</p>
-                </div>
-                <div class="col-md-7">
-                  <div class="progress progress-bar-striped" role="progressbar" aria-label="Heroku | Digital Ocean | Azure" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" >
-                    <div class="progress-bar bg-danger progress-bar-striped progress-bar-animated" style="width: 80%">80%</div>
-                  </div>
-                </div>
-              </div>
-
-              <div class="row mb-3">
-                <div class="col-md-5">
-                  <p>Bash scripting (5 years)</p>
-                </div>
-                <div class="col-md-7">
-                  <div class="progress progress-bar-striped" role="progressbar" aria-label="Bash scripting" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" >
                     <div class="progress-bar bg-danger progress-bar-striped progress-bar-animated" style="width: 80%">80%</div>
                   </div>
                 </div>
@@ -565,26 +647,81 @@
 <div class="my-work dark section">
   <div class="container">
     <div class="row">
-      <div class="col">
-        <h1 class="white-title mb-5 text-center title">Projects I worked on</h1>
+      <div class="col text-center">
+        <h1 class="white-title mb-5 title">Projects I worked on</h1>
 
-        <ul class="list-group dark-list">
-          <li class="list-group-item">Brochure websites</li>
-          <li class="list-group-item">E-commerce</li>
-          <li class="list-group-item">GPS tracking application</li>
-          <li class="list-group-item">Telco sim management application</li>
-          <li class="list-group-item">Mortgage application</li>
-          <li class="list-group-item">Brokers and loan applications</li>
-          <li class="list-group-item">Learning and Educational platforms</li>
-          <li class="list-group-item">Bank and Loyalty platform</li>
-          <li class="list-group-item">Clinical Reservation application</li>
-          <li class="list-group-item">Schedule and appointment applications</li>
-          <li class="list-group-item">Events and campaign apps</li>
-          <li class="list-group-item">Market research application</li>
-          <li class="list-group-item">Map based ride-hailing, food, grocery and package delivery, and financial applications</li>
-          <li class="list-group-item">File management application</li>
-          <li class="list-group-item">Shipment cargo tracking application</li>
-        </ul>
+        <div class="row mb-5">
+          <dv class="col lg-text">
+            <p>Brochure websites</p>
+          </dv>
+
+          <div class="col sm-text">
+            <p>GPS tracking application</p>
+          </div>
+
+          <div class="col sm-text">
+            <p>Telco sim management application</p>
+          </div>
+        </div>
+
+        <div class="row mb-5">
+          <div class="col lg-text">
+            <p>Mortgage application</p>
+          </div>
+
+          <div class="col md-text">
+            <p>Brokers and loan applications</p>
+          </div>
+        </div>
+
+        <div class="row mb-5">
+          <div class="col sm-text">
+            <p>Learning and Educational platforms</p>
+          </div>
+
+          <div class="col md-text">
+            <p>Bank and Loyalty platform</p>
+          </div>
+
+          <div class="col sm-text">
+            <p>Clinical Reservation application</p>
+          </div>
+        </div>
+
+        <div class="row mb-5">
+          <div class="col sm-text">
+            <p>Schedule and appointment applications</p>
+          </div>
+
+          <div class="col lg-text">
+            <p>Events and campaign apps</p>
+          </div>
+        </div>
+
+        <div class="row mb-5">
+          <div class="col sm-text">
+            <p>Market research application</p>
+          </div>
+
+          <div class="col lg-text">
+            <p>File management application</p>
+          </div>
+
+          <div class="col md-text">
+            <p>Shipment cargo tracking application</p>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col sm-text">
+            <p>Map based ride-hailing, food, grocery and package delivery, and financial applications</p>
+          </div>
+
+          <div class="col md-text">
+            <p>E-commerce</p>
+          </div>
+        </div>
+
       </div>
     </div>
   </div>
@@ -593,20 +730,51 @@
 <div class="my-work section">
   <div class="container">
     <div class="row">
-      <div class="col">
-        <h1 class="black-title mb-5 text-center title">Location of the companies I worked with</h1>
+      <div class="col text-center">
+        <h1 class="black-title mb-5 title">Location of the Companies / Clients I worked with</h1>
 
-         <ul class="list-group dark-list">
-           <li class="list-group-item">Philippines</li>
-           <li class="list-group-item">US</li>
-           <li class="list-group-item">France</li>
-           <li class="list-group-item">Australia</li>
-           <li class="list-group-item">Netherlands</li>
-           <li class="list-group-item">UK</li>
-           <li class="list-group-item">Japan</li>
-           <li class="list-group-item">Singapore</li>
-           <li class="list-group-item">Israel</li>
-         </ul>
+        <div class="row pb-5 pt-5">
+          <div class="col">
+            <img src="/assets/images/ph.jpg" alt="Philippines" />
+          </div>
+
+          <div class="col">
+            <img src="/assets/images/us.jpg" alt="US" />
+          </div>
+
+          <div class="col">
+            <img src="/assets/images/fr.jpg" alt="France" />
+          </div>
+        </div>
+
+        <div class="row pb-5 pt-5">
+          <div class="col">
+            <img src="/assets/images/au.jpg" alt="Australia" />
+          </div>
+
+          <div class="col">
+            <img src="/assets/images/nl.jpg" alt="Netherlands" />
+          </div>
+        </div>
+
+        <div class="row pt-5">
+          <div class="col">
+            <img src="/assets/images/uk.jpg" alt="UK" />
+          </div>
+
+          <div class="col">
+            <img src="/assets/images/jp.jpg" alt="Japan" />
+          </div>
+
+          <div class="col">
+            <img src="/assets/images/sg.jpg" alt="Singapore" />
+          </div>
+
+          <div class="col">
+            <img src="/assets/images/is.jpg" alt="Israel" />
+          </div>
+        </div>
+
       </div>
     </div>
   </div>
