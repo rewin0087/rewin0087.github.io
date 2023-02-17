@@ -29,39 +29,41 @@
 
       <div class="offcanvas-lg offcanvas-end flex-grow-1" tabindex="-1" id="bdNavbar" aria-labelledby="bdNavbarOffcanvasLabel" data-bs-scroll="true">
         <div class="offcanvas-header px-4 pb-0">
-          <h5 class="offcanvas-title text-white" id="bdNavbarOffcanvasLabel">Bootstrap</h5>
-          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close" data-bs-target="#bdNavbar"></button>
+          <h5 class="offcanvas-title black-white" id="bdNavbarOffcanvasLabel">
+            <img src="/assets/images/logo.png" alt="Erwin Seribo"/>
+          </h5>
+          <a type="button" class="btn-close btn-close-black" data-bs-dismiss="offcanvas" aria-label="Close" data-bs-target="#bdNavbar"></a>
         </div>
 
         <div class="offcanvas-body p-4 pt-0 p-lg-0">
           <hr class="d-lg-none text-white-50">
           <ul class="navbar-nav flex-row flex-wrap bd-navbar-nav align-items-center">
             <li class="nav-item col-6 col-lg-auto">
-              <a class="nav-link py-2 px-0 px-lg-2" href="#home">Home</a>
+              <a class="nav-link py-2 px-0 px-lg-2 scroll-to" href="#home">Home</a>
             </li>
             <li class="nav-item col-6 col-lg-auto">
-              <a class="nav-link py-2 px-0 px-lg-2 active" aria-current="true" href="#about">About Me</a>
+              <a class="nav-link py-2 px-0 px-lg-2 scroll-to" aria-current="true" href="#about">About Me</a>
             </li>
             <li class="nav-item col-6 col-lg-auto">
-              <a class="nav-link py-2 px-0 px-lg-2" href="#career">Career</a>
+              <a class="nav-link py-2 px-0 px-lg-2 scroll-to" href="#career">Career</a>
             </li>
             <li class="nav-item col-6 col-lg-auto">
-              <a class="nav-link py-2 px-0 px-lg-2" href="#expertise">Expertise</a>
+              <a class="nav-link py-2 px-0 px-lg-2 scroll-to" href="#expertise">Expertise</a>
             </li>
             <li class="nav-item col-6 col-lg-auto">
-              <a class="nav-link py-2 px-0 px-lg-2" href="#skills">Skills</a>
+              <a class="nav-link py-2 px-0 px-lg-2 scroll-to" href="#skills">Skills</a>
             </li>
             <li class="nav-item col-6 col-lg-auto">
-              <a class="nav-link py-2 px-0 px-lg-2" href="#works" >Works</a>
+              <a class="nav-link py-2 px-0 px-lg-2 scroll-to" href="#works" >Works</a>
             </li>
             <li class="nav-item col-6 col-lg-auto">
-              <a class="nav-link py-2 px-0 px-lg-2" href="#location" >Location</a>
+              <a class="nav-link py-2 px-0 px-lg-2 scroll-to" href="#location" >Location</a>
             </li>
             <li class="nav-item col-6 col-lg-auto">
-              <a class="nav-link py-2 px-0 px-lg-2" href="#location" >My Tools</a>
+              <a class="nav-link py-2 px-0 px-lg-2 scroll-to" href="#tools" >My Tools</a>
             </li>
             <li class="nav-item col-6 col-lg-auto">
-              <a class="nav-link py-2 px-0 px-lg-2" href="#hire" >Hire Me!</a>
+              <a class="nav-link py-2 px-0 px-lg-2 scroll-to" href="#hire" >Hire Me!</a>
             </li>
           </ul>
 
@@ -133,7 +135,7 @@
     </div>
     <div class="row">
       <div class="col-md-3 d-flex align-items-center justify-content-center">
-        <img src="/assets/images/me.jpg" class="rounded-circle" alt="Erwin Seribo">
+        <img src="/assets/images/me.jpg" class="rounded-circle mb-5" alt="Erwin Seribo">
       </div>
 
       <div class="col-md-9">
@@ -217,11 +219,16 @@
         <h1 class="black-title title mb-5 text-center">My Technical Skills</h1>
 
         <div class="skills-container">
+          <div class="row mb-5">
+            <div class="col">
+              <h3>Primary Skills</h3>
+            </div>
+          </div>
           <div class="row">
             <div class="col">
-              <div class="row mb-5">
+              <div class="row mb-2">
                 <div class="col">
-                  <h3>Primary Skills</h3>
+                  <h4>General skills</h4>
                 </div>
               </div>
 
@@ -384,7 +391,9 @@
                   </div>
                 </div>
               </div>
+            </div>
 
+            <div class="col">
               <div class="row mb-2">
                 <div class="col">
                   <h4>Frontend skills</h4>
@@ -540,14 +549,16 @@
                 </div>
               </div>
             </div>
+          </div>
 
+          <div class="row mb-5 mt-5">
             <div class="col">
-              <div class="row mb-5">
-                <div class="col">
-                  <h3>Secondary Skills</h3>
-                </div>
-              </div>
+              <h3>Secondary Skills</h3>
+            </div>
+          </div>
 
+          <div class="row">
+            <div class="col">
               <div class="row mb-3">
                 <div class="col-md-5">
                   <p>Elixir | Phoenix (1 years)</p>
@@ -602,7 +613,9 @@
                   </div>
                 </div>
               </div>
+            </div>
 
+            <div class="col">
               <div class="row mb-3">
                 <div class="col-md-5">
                   <p>Vagrant | Virtualbox (8 years)</p>
@@ -755,44 +768,44 @@
       <div class="col text-center">
         <h1 class="black-title mb-5 title">Location of the Companies / Clients I worked with</h1>
 
-        <div class="row pb-5 pt-5">
-          <div class="col">
+        <div class="row">
+          <div class="col pb-5 pt-5">
             <img src="/assets/images/ph.jpg" alt="Philippines" />
           </div>
 
-          <div class="col">
+          <div class="col pb-5 pt-5">
             <img src="/assets/images/us.jpg" alt="US" />
           </div>
 
-          <div class="col">
+          <div class="col pb-5 pt-5">
             <img src="/assets/images/fr.jpg" alt="France" />
           </div>
         </div>
 
-        <div class="row pb-5 pt-5">
-          <div class="col">
+        <div class="row">
+          <div class="col pb-5 pt-5">
             <img src="/assets/images/au.jpg" alt="Australia" />
           </div>
 
-          <div class="col">
+          <div class="col pb-5 pt-5">
             <img src="/assets/images/nl.jpg" alt="Netherlands" />
           </div>
         </div>
 
-        <div class="row pt-5">
-          <div class="col">
+        <div class="row">
+          <div class="col pb-5 pt-5">
             <img src="/assets/images/uk.jpg" alt="UK" />
           </div>
 
-          <div class="col">
+          <div class="col pb-5 pt-5">
             <img src="/assets/images/jp.jpg" alt="Japan" />
           </div>
 
-          <div class="col">
+          <div class="col pb-5 pt-5">
             <img src="/assets/images/sg.jpg" alt="Singapore" />
           </div>
 
-          <div class="col">
+          <div class="col pb-5 pt-5">
             <img src="/assets/images/is.jpg" alt="Israel" />
           </div>
         </div>
@@ -808,7 +821,9 @@
         <h1 class="white-title title mb-5">My Location</h1>
 
         <div class="row">
-          <div class="col-md-4"></div>
+          <div class="col-md-4 text-center mb-5">
+            <img src="/assets/images/loc.png" class="ph-loc" alt="Philippines" />
+          </div>
           <div class="col-md-8">
             <p class="text-content">I am based in the Philippines, I mostly work remotely and workng from home. I visit coffeeshop sometimes to change mode and had some coffee and continue to do my thing.</p>
             <p class="text-content">I am comfortable working from home and not coming in the office. I collaborate with the team online through slack, google meet, zoom or any other online communication platform.</p>
@@ -830,7 +845,7 @@
 
         <div class="row">
           <div class="col-md-7">
-            <p class="text-content">I am a mac user, I mostly work and finish my stuff using my favorite powerful macbook pro machine with double monitors and with all the tech set installed that I need.</p>
+            <p class="text-content">I am a mac user, I mostly work and finish my stuff using my favorite powerful macbook pro machine with extended monitor and with all the tech set installed that I need.</p>
             <p class="text-content">I love working in a mac as it is durable and heavy duty which last for many years and can still keep up the system requirements of the tools that im using to develop apps.</p>
             <p class="text-content">A quality works requires quality equipments which matched my quality works and output.</p>
 
@@ -889,7 +904,7 @@
       <div class="footer-content">
   <div class="container">
     <div class="row mb-5">
-      <div class="col-md-9">
+      <div class="col-md-9 mb-5">
         <div class="row">
           <div class="col">
             <h4>Links</h4>
@@ -899,40 +914,40 @@
           <div class="col">
             <ul class="list-group list-group-flush">
               <li class="list-group-item">
-                <a href="#about">About Me</a>
+                <a href="#about" class="scroll-to">About Me</a>
               </li>
               <li class="list-group-item">
-                <a href="#career">Career</a>
-              </li>
-            </ul>
-          </div>
-          <div class="col">
-            <ul class="list-group list-group-flush">
-              <li class="list-group-item">
-                <a href="#expertise">Expertise</a>
-              </li>
-              <li class="list-group-item">
-                <a href="#skills">Skills</a>
+                <a href="#career" class="scroll-to">Career</a>
               </li>
             </ul>
           </div>
           <div class="col">
             <ul class="list-group list-group-flush">
               <li class="list-group-item">
-                <a href="#works">Works</a>
+                <a href="#expertise" class="scroll-to">Expertise</a>
               </li>
               <li class="list-group-item">
-                <a href="#location">Location</a>
+                <a href="#skills" class="scroll-to">Skills</a>
               </li>
             </ul>
           </div>
           <div class="col">
             <ul class="list-group list-group-flush">
               <li class="list-group-item">
-                <a href="#tools">My Tools</a>
+                <a href="#works" class="scroll-to">Works</a>
               </li>
               <li class="list-group-item">
-                <a href="#hire">Hire Me!</a>
+                <a href="#location" class="scroll-to">Location</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col">
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">
+                <a href="#tools" class="scroll-to">My Tools</a>
+              </li>
+              <li class="list-group-item">
+                <a href="#hire" class="scroll-to">Hire Me!</a>
               </li>
             </ul>
           </div>

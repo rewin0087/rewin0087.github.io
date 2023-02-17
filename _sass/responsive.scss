@@ -1,0 +1,48 @@
+@media screen and (max-width: 800px) {
+  body {
+    .banner {
+      padding: 0 !important;
+
+      .banner-cover {
+        background-size: cover;
+        background-position: 65%;
+
+        h1 {
+          font-size: 3rem;
+        }
+      }
+    }
+
+    .section {
+      padding: 5em 1em;
+    }
+
+    .title {
+      font-size: 2.5em;
+    }
+
+    .sm-text {
+      font-size: 1em;
+    }
+
+    .md-text {
+      font-size: 1.5em;
+    }
+
+    .lg-text {
+      font-size: 1.5em;
+    }
+
+    .ph-loc {
+      width: 80%;
+    }
+
+    .code-logo {
+      font-size: 8em;
+
+      &.code-logo-sm {
+        font-size: 4em;
+      }
+    }
+  }
+}
