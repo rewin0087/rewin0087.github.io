@@ -26,6 +26,23 @@ header {
   padding: 15em 0;
 }
 
+.footer-content {
+  position: relative;
+  overflow: hidden;
+  padding-top: 15em;
+
+  .list-group {
+    .list-group-item {
+      border: none;
+
+      a {
+        color: $black-color;
+        text-decoration: none;
+      }
+    }
+  }
+}
+
 .title {
   font-size: 4em;
   font-weight: normal;
@@ -41,7 +58,6 @@ header {
 
 .dark {
   background-color: $black-color;
-  outline: 1px solid $primary-color;
 
   .text-content {
     color: $white-color !important;
@@ -119,6 +135,14 @@ header {
 
   span {
     color: $primary-color;
+  }
+
+  &.inverted {
+    color: $white-color;
+  }
+
+  &.code-logo-sm {
+    font-size: 7em;
   }
 }
 
