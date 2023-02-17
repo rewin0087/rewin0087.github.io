@@ -107,3 +107,17 @@ header {
     color: $primary-color;
   }
 }
+
+.list-group {
+  &.dark-list {
+    .list-group-item {
+      background: $black-color;
+      color: $white-color;
+      padding: 1em;
+
+      &:hover {
+        background: $primary-color
+      }
+    }
+  }
+}
