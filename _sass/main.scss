@@ -4,6 +4,21 @@ $border-color: #ddd;
 $black-color: #000;
 $white-color: #fff;
 
+.progress-container {
+  height: 8px;
+  position: fixed;
+  top: 0;
+  z-index: 2;
+  width: 100%;
+  background-color: $border-color;
+
+  .progress-bar {
+    height: 8px;
+    background: $primary-color;
+    width: 0%;
+  }
+}
+
 header {
   .header-content {
     border-bottom: 1px solid $border-color;

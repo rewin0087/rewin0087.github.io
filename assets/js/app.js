@@ -7,6 +7,15 @@ const careerYears = function() {
   $('.exp-year').html(totalCareerYears);
 }
 
+window.onscroll = function() {myFunction()};
+
+function myFunction() {
+  var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+  var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+  var scrolled = (winScroll / height) * 100;
+  document.getElementById("on-scroll-progress").style.width = scrolled + "%";
+}
+
 $(document).ready(function() {
   careerYears();
 
