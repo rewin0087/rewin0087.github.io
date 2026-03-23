@@ -8,8 +8,20 @@
         background-position: 65%;
         background-attachment: scroll;
 
-        h1 {
-          font-size: 3rem;
+        .hero-title {
+          font-size: 2.8rem;
+        }
+
+        .hero-subtitle {
+          font-size: 1.05rem;
+        }
+
+        .txt-tech {
+          font-size: 1.2rem;
+        }
+
+        .hero-actions .btn {
+          width: 100%;
         }
       }
     }
@@ -44,6 +56,238 @@
       &.code-logo-sm {
         font-size: 4em;
       }
+    }
+
+    .brand-text {
+      margin-left: 0.5rem;
+    }
+
+    .brand-role {
+      font-size: 0.75rem;
+    }
+
+    .nav-cta {
+      width: 100%;
+      text-align: center;
+    }
+
+    #bdNavbar {
+      height: 100vh;
+    }
+
+    #bdNavbar .offcanvas-body {
+      height: 100%;
+    }
+
+    .nav-main {
+      flex-direction: column;
+      align-items: stretch;
+    }
+
+    .nav-main .nav-item {
+      width: 100%;
+    }
+
+    .nav-main .nav-link {
+      width: 100%;
+      text-align: left;
+      padding-left: 1em !important;
+      padding-right: 1em !important;
+    }
+
+    .offcanvas-body .navbar-nav.ms-md-auto {
+      flex-direction: row;
+      flex-wrap: nowrap;
+      justify-content: center;
+      gap: 0.75rem;
+    }
+
+    .offcanvas-body .navbar-nav.ms-md-auto .nav-item {
+      width: auto;
+    }
+
+    .about-tags {
+      justify-content: center;
+    }
+
+    .about-card {
+      padding: 1.75rem;
+    }
+
+    .about-panel {
+      padding: 2rem;
+    }
+
+    .career-list {
+      margin-top: 1.5rem;
+    }
+
+    .career-item {
+      padding: 1rem 1.2rem;
+    }
+
+    .career-icon {
+      right: 12px;
+    }
+
+    .panel-body {
+      padding: 1.5rem;
+    }
+
+    .skills-card {
+      padding: 1.5rem;
+    }
+
+    .skills-card-wide {
+      grid-column: auto;
+    }
+
+    .skill-meta {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
+    .skills-callout {
+      margin-top: 1rem;
+    }
+
+    .skills-split {
+      grid-template-columns: 1fr;
+    }
+
+    .skills-two-col {
+      grid-template-columns: 1fr;
+    }
+
+    .skill-list {
+      grid-template-columns: 1fr;
+    }
+
+    .my-tools .row {
+      gap: 2rem;
+    }
+
+    .my-tools .col-md-5 {
+      justify-content: flex-start;
+    }
+
+    .code-logo-dev {
+      width: 100%;
+      font-size: 0.95rem;
+    }
+
+    .work-callout {
+      margin-top: 1rem;
+    }
+
+    .work-grid {
+      grid-template-columns: 1fr;
+    }
+
+    .work-card {
+      padding: 1.5rem;
+    }
+
+    .work-card h4 {
+      font-size: 1.1rem;
+    }
+
+    .work-items span {
+      width: 100%;
+      justify-content: flex-start;
+    }
+
+    .location-card img {
+      width: 64px;
+      height: 64px;
+    }
+
+    .location-callout {
+      margin-top: 1rem;
+    }
+
+    .location-collage {
+      grid-template-columns: 1fr;
+    }
+
+    .location-main {
+      grid-template-columns: 1fr;
+    }
+
+    .location-grid-collage {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      grid-auto-rows: auto;
+    }
+
+    .collage-map {
+      align-items: center;
+      justify-content: center;
+    }
+
+    .location-panel {
+      padding: 1.5rem;
+    }
+
+    .hire-grid {
+      grid-template-columns: 1fr;
+    }
+
+    .hire-actions {
+      flex-direction: column;
+    }
+
+    .flag-slide {
+      grid-template-columns: 1fr;
+    }
+
+    .flag-tile {
+      height: 150px;
+    }
+
+    .flag-slider-btn {
+      width: 38px;
+      height: 38px;
+    }
+
+    .footer-top {
+      grid-template-columns: 1fr;
+    }
+
+    .footer-links {
+      grid-template-columns: 1fr;
+    }
+
+    .footer-bottom {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+
+    .footer-brand,
+    .footer-contact {
+      text-align: center;
+    }
+
+    .footer-tagline {
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .footer-list {
+      justify-items: center;
+      text-align: center;
+    }
+
+    .footer-group h4 {
+      text-align: center;
+    }
+
+    .footer-cta {
+      justify-content: center;
+    }
+
+    .footer-cta .btn {
+      width: 100%;
     }
   }
 }

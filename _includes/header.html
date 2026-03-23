@@ -1,29 +1,43 @@
-<div class="header-content pt-4 pb-4">
-  <header class="navbar navbar-expand-lg bd-navbar sticky-top">
-    <nav class="container-xxl bd-gutter flex-wrap flex-lg-nowrap" aria-label="Main navigation">
-        <div class="d-lg-none" style="width: 1.5rem;"></div>
+<div class="header-content pt-3 pb-3">
+  <header class="navbar navbar-expand-lg bd-navbar sticky-top site-header">
+    <nav class="container-xxl bd-gutter flex-wrap flex-lg-nowrap align-items-center" aria-label="Main navigation">
+      <div class="d-lg-none" style="width: 1.5rem;"></div>
 
-      <a class="navbar-brand p-0 me-0 me-lg-2" href="/" aria-label="Bootstrap">
-        <img src="/assets/images/logo.png" alt="Erwin Seribo" />
+      <a class="navbar-brand p-0 me-0 me-lg-3 d-flex align-items-center" href="/" aria-label="Home">
+        <img class="brand-mark" src="/assets/images/logo.png" alt="Erwin Seribo" />
+        <span class="brand-text">
+          <span class="brand-name">Erwin Seribo</span>
+          <span class="brand-role">Software Engineer</span>
+        </span>
       </a>
 
       <div class="d-flex">
-        <a href="#" class="d-flex d-lg-none order-3 p-2" type="button" data-bs-toggle="offcanvas" data-bs-target="#bdNavbar" aria-controls="bdNavbar" aria-label="Toggle navigation">
-          <img src="/assets/images/dots.png", alt="Menu">
-        </a>
+        <button class="d-flex d-lg-none order-3 p-2 mobile-menu-btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#bdNavbar" aria-controls="bdNavbar" aria-label="Toggle navigation">
+          <span class="menu-icon" aria-hidden="true">
+            <svg viewBox="0 0 48 48" width="24" height="24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M8 14H40" stroke="currentColor" stroke-width="3" stroke-linecap="round" />
+              <path d="M8 24H32" stroke="currentColor" stroke-width="3" stroke-linecap="round" />
+              <path d="M8 34H40" stroke="currentColor" stroke-width="3" stroke-linecap="round" />
+            </svg>
+          </span>
+        </button>
       </div>
 
       <div class="offcanvas-lg offcanvas-end flex-grow-1" tabindex="-1" id="bdNavbar" aria-labelledby="bdNavbarOffcanvasLabel" data-bs-scroll="true">
         <div class="offcanvas-header px-4 pb-0">
-          <h5 class="offcanvas-title black-white" id="bdNavbarOffcanvasLabel">
-            <img src="/assets/images/logo.png" alt="Erwin Seribo"/>
+          <h5 class="offcanvas-title black-white d-flex align-items-center" id="bdNavbarOffcanvasLabel">
+            <img class="brand-mark" src="/assets/images/logo.png" alt="Erwin Seribo" />
+            <span class="brand-text">
+              <span class="brand-name">Erwin Seribo</span>
+              <span class="brand-role">Software Engineer</span>
+            </span>
           </h5>
           <a type="button" class="btn-close btn-close-black" data-bs-dismiss="offcanvas" aria-label="Close" data-bs-target="#bdNavbar"></a>
         </div>
 
         <div class="offcanvas-body p-4 pt-0 p-lg-0">
           <hr class="d-lg-none text-white-50">
-          <ul class="navbar-nav flex-row flex-wrap bd-navbar-nav align-items-center">
+          <ul class="navbar-nav flex-row flex-wrap bd-navbar-nav align-items-center nav-main">
             <li class="nav-item col-6 col-lg-auto">
               <a class="nav-link py-2 px-0 px-lg-2 scroll-to" href="#home">Home</a>
             </li>
@@ -49,7 +63,7 @@
               <a class="nav-link py-2 px-0 px-lg-2 scroll-to" href="#tools" >Tools</a>
             </li>
             <li class="nav-item col-6 col-lg-auto">
-              <a class="nav-link py-2 px-0 px-lg-2 scroll-to" href="#hire" >Hire Me!</a>
+              <a class="nav-link py-2 px-0 px-lg-2 scroll-to nav-cta" href="#hire">Hire Me!</a>
             </li>
           </ul>
 
@@ -57,12 +71,12 @@
 
           <ul class="navbar-nav flex-row flex-wrap ms-md-auto">
             <li class="nav-item col-6 col-lg-auto">
-              <a class="nav-link  py-2 px-0 px-lg-2" href="https://www.linkedin.com/in/erwin-seribo-baab306a/" target="_blank">
-                <img src="/assets/images/linkedin.png" alt="Linkedin" />
+              <a class="nav-link py-2 px-0 px-lg-2 social-icon" href="https://www.linkedin.com/in/erwin-seribo-baab306a/" target="_blank" aria-label="LinkedIn">
+                <img src="/assets/images/linkedin.png" alt="LinkedIn" />
               </a>
             </li>
             <li class="nav-item col-6 col-lg-auto">
-              <a class="nav-link py-2 px-0 px-lg-2" href="https://github.com/rewin0087" target="_blank">
+              <a class="nav-link py-2 px-0 px-lg-2 social-icon" href="https://github.com/rewin0087" target="_blank" aria-label="GitHub">
                 <img src="/assets/images/github.png" alt="Github" />
               </a>
             </li>
@@ -73,7 +87,7 @@
             </li>
 
             <li class="nav-item col-6 col-lg-auto">
-              <a class="nav-link py-2 px-0 px-lg-2" href="mailto:erwin_rulezzz87@yahoo.com">
+              <a class="nav-link py-2 px-0 px-lg-2 social-icon" href="mailto:erwin_rulezzz87@yahoo.com" aria-label="Email">
                 <img src="/assets/images/email.png" alt="Send me email" />
               </a>
             </li>

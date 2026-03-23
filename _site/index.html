@@ -19,32 +19,46 @@
   </head>
   <body>
     <header>
-      <div class="header-content pt-4 pb-4">
-  <header class="navbar navbar-expand-lg bd-navbar sticky-top">
-    <nav class="container-xxl bd-gutter flex-wrap flex-lg-nowrap" aria-label="Main navigation">
-        <div class="d-lg-none" style="width: 1.5rem;"></div>
+      <div class="header-content pt-3 pb-3">
+  <header class="navbar navbar-expand-lg bd-navbar sticky-top site-header">
+    <nav class="container-xxl bd-gutter flex-wrap flex-lg-nowrap align-items-center" aria-label="Main navigation">
+      <div class="d-lg-none" style="width: 1.5rem;"></div>
 
-      <a class="navbar-brand p-0 me-0 me-lg-2" href="/" aria-label="Bootstrap">
-        <img src="/assets/images/logo.png" alt="Erwin Seribo" />
+      <a class="navbar-brand p-0 me-0 me-lg-3 d-flex align-items-center" href="/" aria-label="Home">
+        <img class="brand-mark" src="/assets/images/logo.png" alt="Erwin Seribo" />
+        <span class="brand-text">
+          <span class="brand-name">Erwin Seribo</span>
+          <span class="brand-role">Software Engineer</span>
+        </span>
       </a>
 
       <div class="d-flex">
-        <a href="#" class="d-flex d-lg-none order-3 p-2" type="button" data-bs-toggle="offcanvas" data-bs-target="#bdNavbar" aria-controls="bdNavbar" aria-label="Toggle navigation">
-          <img src="/assets/images/dots.png", alt="Menu">
-        </a>
+        <button class="d-flex d-lg-none order-3 p-2 mobile-menu-btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#bdNavbar" aria-controls="bdNavbar" aria-label="Toggle navigation">
+          <span class="menu-icon" aria-hidden="true">
+            <svg viewBox="0 0 48 48" width="24" height="24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M8 14H40" stroke="currentColor" stroke-width="3" stroke-linecap="round" />
+              <path d="M8 24H32" stroke="currentColor" stroke-width="3" stroke-linecap="round" />
+              <path d="M8 34H40" stroke="currentColor" stroke-width="3" stroke-linecap="round" />
+            </svg>
+          </span>
+        </button>
       </div>
 
       <div class="offcanvas-lg offcanvas-end flex-grow-1" tabindex="-1" id="bdNavbar" aria-labelledby="bdNavbarOffcanvasLabel" data-bs-scroll="true">
         <div class="offcanvas-header px-4 pb-0">
-          <h5 class="offcanvas-title black-white" id="bdNavbarOffcanvasLabel">
-            <img src="/assets/images/logo.png" alt="Erwin Seribo"/>
+          <h5 class="offcanvas-title black-white d-flex align-items-center" id="bdNavbarOffcanvasLabel">
+            <img class="brand-mark" src="/assets/images/logo.png" alt="Erwin Seribo" />
+            <span class="brand-text">
+              <span class="brand-name">Erwin Seribo</span>
+              <span class="brand-role">Software Engineer</span>
+            </span>
           </h5>
           <a type="button" class="btn-close btn-close-black" data-bs-dismiss="offcanvas" aria-label="Close" data-bs-target="#bdNavbar"></a>
         </div>
 
         <div class="offcanvas-body p-4 pt-0 p-lg-0">
           <hr class="d-lg-none text-white-50">
-          <ul class="navbar-nav flex-row flex-wrap bd-navbar-nav align-items-center">
+          <ul class="navbar-nav flex-row flex-wrap bd-navbar-nav align-items-center nav-main">
             <li class="nav-item col-6 col-lg-auto">
               <a class="nav-link py-2 px-0 px-lg-2 scroll-to" href="#home">Home</a>
             </li>
@@ -70,7 +84,7 @@
               <a class="nav-link py-2 px-0 px-lg-2 scroll-to" href="#tools" >Tools</a>
             </li>
             <li class="nav-item col-6 col-lg-auto">
-              <a class="nav-link py-2 px-0 px-lg-2 scroll-to" href="#hire" >Hire Me!</a>
+              <a class="nav-link py-2 px-0 px-lg-2 scroll-to nav-cta" href="#hire">Hire Me!</a>
             </li>
           </ul>
 
@@ -78,12 +92,12 @@
 
           <ul class="navbar-nav flex-row flex-wrap ms-md-auto">
             <li class="nav-item col-6 col-lg-auto">
-              <a class="nav-link  py-2 px-0 px-lg-2" href="https://www.linkedin.com/in/erwin-seribo-baab306a/" target="_blank">
-                <img src="/assets/images/linkedin.png" alt="Linkedin" />
+              <a class="nav-link py-2 px-0 px-lg-2 social-icon" href="https://www.linkedin.com/in/erwin-seribo-baab306a/" target="_blank" aria-label="LinkedIn">
+                <img src="/assets/images/linkedin.png" alt="LinkedIn" />
               </a>
             </li>
             <li class="nav-item col-6 col-lg-auto">
-              <a class="nav-link py-2 px-0 px-lg-2" href="https://github.com/rewin0087" target="_blank">
+              <a class="nav-link py-2 px-0 px-lg-2 social-icon" href="https://github.com/rewin0087" target="_blank" aria-label="GitHub">
                 <img src="/assets/images/github.png" alt="Github" />
               </a>
             </li>
@@ -94,7 +108,7 @@
             </li>
 
             <li class="nav-item col-6 col-lg-auto">
-              <a class="nav-link py-2 px-0 px-lg-2" href="mailto:erwin_rulezzz87@yahoo.com">
+              <a class="nav-link py-2 px-0 px-lg-2 social-icon" href="mailto:erwin_rulezzz87@yahoo.com" aria-label="Email">
                 <img src="/assets/images/email.png" alt="Send me email" />
               </a>
             </li>
@@ -113,12 +127,17 @@
       <div class="banner section" id="home">
   <div class="banner-cover d-flex align-items-center justify-content-center text-center">
     <div class="container">
-      <div class="row">
-        <div class="col-md-12 intro-banner">
-          <h3>Hi THERE! I AM</h3>
-          <h1 class="mb-4">< Erwin Seribo <span>/</span>> </h1>
-          <h3>A Passionate <span>Fullstack Software Developer</span></h3>
-          <h2 class="txt-tech"><span class="txt-rotate" data-period="2000" data-fixed="I develop Web applications" data-rotate='["I build Websites", "I integrate APIs", "I build standalone Web client", "I develop Web applications", "I develop APIs"]'></span></h2>
+      <div class="row justify-content-center">
+        <div class="col-lg-9 intro-banner">
+          <div class="hero-badge">Available for selective projects</div>
+          <h3 class="eyebrow">Hi, I am</h3>
+          <h1 class="mb-3 hero-title"><span class="code-mark">&lt;</span>Erwin Seribo<span class="code-mark">/&gt;</span></h1>
+          <p class="hero-subtitle">Fullstack Software Engineer focused on sleek product experiences and robust systems.</p>
+          <h2 class="txt-tech"><span class="txt-rotate" data-period="2000" data-fixed="I develop Web applications" data-rotate='["I craft product-ready web platforms", "I architect secure, scalable APIs", "I build high-performance single-page apps", "I optimize e-commerce experiences", "I ship reliable cloud-ready systems"]'></span></h2>
+          <div class="hero-actions d-flex flex-column flex-sm-row justify-content-center gap-3">
+            <a class="btn btn-primary scroll-to" href="#hire">Let us work together</a>
+            <a class="btn btn-outline-dark scroll-to" href="#works">View my work</a>
+          </div>
         </div>
       </div>
     </div>
@@ -138,23 +157,71 @@
 </div>
 <div class="about-me dark section" id="about">
   <div class="container">
-    <div class="row">
-      <div class="col">
-        <h1 class="white-title title mb-5">Who am I</h1>
+    <div class="row mb-5 align-items-end">
+      <div class="col-lg-7">
+        <p class="eyebrow">About</p>
+        <h1 class="white-title title mb-3">Who I Am</h1>
+        <p class="about-lede">Seasoned fullstack engineer delivering scalable web products, API platforms, and high-converting e-commerce experiences.</p>
+      </div>
+      <div class="col-lg-5 text-lg-end">
+        <div class="about-tags">
+          <span class="tag">Ruby on Rails</span>
+          <span class="tag">Node.js</span>
+          <span class="tag">GraphQL</span>
+          <span class="tag">Shopify</span>
+          <span class="tag">React</span>
+          <span class="tag">Docker</span>
+        </div>
       </div>
     </div>
-    <div class="row">
-      <div class="col-md-3 d-flex align-items-center justify-content-center">
-        <img src="/assets/images/me.jpg" class="rounded-circle mb-5" alt="Erwin Seribo">
+    <div class="row g-4 align-items-center">
+      <div class="col-lg-4">
+        <div class="about-card">
+          <div class="about-photo-wrap">
+            <img src="/assets/images/me.jpg" class="about-photo" alt="Erwin Seribo">
+          </div>
+          <div class="about-meta">
+            <h3>Erwin Seribo</h3>
+            <p>Fullstack Software Engineer</p>
+          </div>
+          <div class="about-stats">
+            <div class="stat">
+              <span class="stat-value"><span class="exp-year" data-start-year="2012"></span>+</span>
+              <span class="stat-label">Years experience</span>
+            </div>
+            <div class="stat">
+              <span class="stat-value">30+</span>
+              <span class="stat-label">Projects shipped</span>
+            </div>
+            <div class="stat">
+              <span class="stat-value">6</span>
+              <span class="stat-label">Core platforms</span>
+            </div>
+          </div>
+        </div>
       </div>
 
-      <div class="col-md-9">
-        <p class="text-content">My name is <span>Erwin Seribo</span> and I am a passionate fullstack software developer who love’s programming especially ruby and nodejs language.</p>
-        <p class="text-content">I have <i class="exp-year">10</i> years of experience in the IT industry as a software developer particularly in ruby on rails, graphql, shopify, api, docker, reactjs, angularjs and vuejs app development. </p>
-        <p class="text-content">I am confident that I have the enough knowledge and skills to work on a project within a team or as one man team.</p>
-        <p class="text-content">I am willing to learn and grow more.</p>
-        <p class="text-content">Collaboration is one of my way to achieve the expected output and deliver it on time or earlier.</p>
-        <p class="text-content">During my free time I join ruby meetups, hackathons and code camps outside of work as part of my growth and learning curve in my career.</p>
+      <div class="col-lg-8">
+        <div class="about-panel">
+          <p class="text-content">I design and deliver reliable, maintainable software for teams that prioritize user experience, performance, and long-term stability.</p>
+          <p class="text-content">My core stack includes Ruby on Rails, Node.js, GraphQL, Shopify, and modern front-end frameworks such as React, Vue, and Angular.</p>
+          <p class="text-content">I thrive in collaborative environments, mentoring teams, refining delivery workflows, and consistently shipping ahead of schedule.</p>
+          <p class="text-content">I also leverage AI-assisted development with tools like GitHub Copilot, VS Code AI agents, and vibe coding practices to accelerate delivery while maintaining quality.</p>
+          <div class="about-highlights">
+            <div class="highlight">
+              <h4>Product engineering</h4>
+              <p>Turn business goals into scalable architectures and polished user experiences.</p>
+            </div>
+            <div class="highlight">
+              <h4>System reliability</h4>
+              <p>Design API and data flows that are resilient, observable, and secure.</p>
+            </div>
+          </div>
+          <div class="about-actions d-flex flex-column flex-sm-row gap-3">
+            <a class="btn btn-outline-light scroll-to" href="#hire">Let us collaborate</a>
+            <a class="btn btn-primary scroll-to" href="#works">Explore my work</a>
+          </div>
+        </div>
       </div>
     </div>
   </div>
@@ -174,49 +241,116 @@
 </div>
 <div class="my-career section" id="career">
   <div class="container">
-    <div class="row">
-      <div class="col-md-9">
-        <h1 class="black-title title mb-5">What can I do</h1>
-
-        <p class="text-content">I am a team player and a proactive developer who suggest and adapt new strategies or new technologies from co-developers or from technical meetups or seminars that can help to boost the development of the project.</p>
-        <p class="text-content">I do follow to use and implement suggested best practices as of the current trend like Agile, git flow, DevOps, scrum, pair programming, open source and collaboration.</p>
-        <p class="text-content">In my <span class="exp-year">10</span> years of my career I learned how the software development works from planning to implementation and testing until the deployment, support, new features and bug fixes phase. </p>
-        <p class="text-content">As of now I am still love and eager to learn new technologies and strategies for me to grow more and be one of the best developer or be the next CTO in the future who will guide the development team.</p>
+    <div class="row align-items-center g-5">
+      <div class="col-lg-7">
+        <p class="eyebrow">Career</p>
+        <h1 class="black-title title mb-3">What I Do</h1>
+        <p class="career-lede">Strategic delivery partner focused on end-to-end execution, stakeholder alignment, and measurable impact.</p>
+        <div class="career-list">
+          <div class="career-item">
+            <span class="career-icon">01</span>
+            <h4>Discovery to delivery</h4>
+            <p>Translate business goals into scoped roadmaps, technical plans, and delivery milestones.</p>
+          </div>
+          <div class="career-item">
+            <span class="career-icon">02</span>
+            <h4>Quality and observability</h4>
+            <p>Build with testing, monitoring, and incident readiness to protect uptime and trust.</p>
+          </div>
+          <div class="career-item">
+            <span class="career-icon">03</span>
+            <h4>Technical leadership</h4>
+            <p>Drive standards, code reviews, and documentation that keep teams aligned and fast.</p>
+          </div>
+        </div>
       </div>
 
-      <div class="col-md-3 d-flex align-items-center justify-content-center">
-        <div class="code-logo">
-          <p>< <span>/</span> ></p>
+      <div class="col-lg-5">
+        <div class="career-panel">
+          <div class="panel-header">
+            <span class="panel-dot"></span>
+            <span class="panel-dot"></span>
+            <span class="panel-dot"></span>
+            <span class="panel-title">Delivery Console</span>
+            <span class="panel-status">Live</span>
+          </div>
+          <div class="panel-body">
+            <div class="career-metrics">
+              <div class="metric">
+                <span class="metric-value"><span class="exp-year" data-start-year="2012"></span>+</span>
+                <span class="metric-label">Years in production</span>
+              </div>
+              <div class="metric">
+                <span class="metric-value">99.9%</span>
+                <span class="metric-label">Target uptime</span>
+              </div>
+              <div class="metric">
+                <span class="metric-value">24/7</span>
+                <span class="metric-label">Ops readiness</span>
+              </div>
+            </div>
+            <div class="career-stack">
+              <span class="stack-pill">Discovery</span>
+              <span class="stack-pill">QA Strategy</span>
+              <span class="stack-pill">SLOs</span>
+              <span class="stack-pill">Monitoring</span>
+              <span class="stack-pill">Release Mgmt</span>
+            </div>
+            <div class="career-code">
+              <p class="code-title">Execution loop</p>
+              <pre><code>Align -> Design -> Build -> Validate -> Scale</code></pre>
+            </div>
+          </div>
         </div>
       </div>
     </div>
   </div>
 </div>
-<div class="my-expertise dark section" id="expertise">
+<div class="my-expertise dark section parallax-section" id="expertise" data-parallax-speed="0.35">
   <div class="container">
-    <div class="row">
-      <div class="col-md-12">
-        <h1 class="white-title title mb-5 text-center">My Expertise</h1>
+    <div class="row mb-5 align-items-end">
+      <div class="col-lg-7">
+        <p class="eyebrow">Expertise</p>
+        <h1 class="white-title title mb-3">Modern Engineering Stack</h1>
+        <p class="expertise-lede">High-performance web platforms, API ecosystems, and AI-accelerated workflows built with today’s most trusted tools.</p>
+      </div>
+      <div class="col-lg-5 text-lg-end">
+        <div class="expertise-callout">AI-first delivery with VS Code + Copilot</div>
+      </div>
+    </div>
 
-        <div class="row d-flex justify-content-between align-items-sm-center">
-          <div class="col mb-5 text-center">
-            <img src="/assets/images/rails.png" alt="Ruby on Rails"/>
-          </div>
-          <div class="col mb-5 text-center">
-            <img src="/assets/images/react.png" alt="React Js"/>
-          </div>
-          <div class="col mb-5 text-center">
-            <img src="/assets/images/angular.png" alt="Angular Js"/>
-          </div>
-          <div class="col mb-5 text-center">
-            <img src="/assets/images/vuejs.png" alt="Vue Js"/>
-          </div>
-          <div class="col mb-5 text-center">
-            <img src="/assets/images/graphql.png" alt="Graphql"/>
-          </div>
-          <div class="col mb-5 text-center">
-            <img src="/assets/images/docker.jpg" alt="Docker"/>
-          </div>
+    <div class="expertise-grid">
+      <div class="expertise-card">
+        <h4>Core Platforms</h4>
+        <p>Scalable backends and e-commerce foundations.</p>
+        <div class="logo-row">
+          <span class="expertise-pill">Ruby on Rails</span>
+          <span class="expertise-pill">GraphQL</span>
+          <span class="expertise-pill">Docker</span>
+          <span class="expertise-pill">Inertia Rails</span>
+        </div>
+      </div>
+
+      <div class="expertise-card">
+        <h4>Frontend Experiences</h4>
+        <p>Polished, responsive UI with modern frameworks.</p>
+        <div class="logo-row">
+          <span class="expertise-pill">React</span>
+          <span class="expertise-pill">Vue</span>
+          <span class="expertise-pill">Angular</span>
+          <span class="expertise-pill">Inertia Rails</span>
+        </div>
+      </div>
+
+      <div class="expertise-card">
+        <h4>AI Tooling</h4>
+        <p>AI-assisted coding and intelligent delivery workflows.</p>
+        <div class="logo-row">
+          <span class="expertise-pill">GitHub Copilot</span>
+          <span class="expertise-pill">VS Code</span>
+          <span class="expertise-pill">ChatGPT</span>
+          <span class="expertise-pill">Claude</span>
+          <span class="expertise-pill">Cursor</span>
         </div>
       </div>
     </div>
@@ -224,465 +358,338 @@
 </div>
 <div class="my-skills section" id="skills">
   <div class="container">
-    <div class="row">
-      <div class="col-md-12">
-        <h1 class="black-title title mb-5 text-center">My Technical Skills</h1>
+    <div class="row mb-5 align-items-end">
+      <div class="col-lg-7">
+        <p class="eyebrow">Skills</p>
+        <h1 class="black-title title mb-3">Technical Skills Matrix</h1>
+        <p class="skills-lede">A focused view of my primary and secondary capabilities, shaped by real-world delivery experience.</p>
+      </div>
+      <div class="col-lg-5 text-lg-end">
+        <div class="skills-callout">Measured by years of hands-on delivery</div>
+      </div>
+    </div>
 
-        <div class="skills-container">
-          <div class="row mb-5">
-            <div class="col">
-              <h3>Primary Skills</h3>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col">
-              <div class="row mb-2">
-                <div class="col">
-                  <h4>General skills</h4>
-                </div>
+    <div class="skills-grid">
+      <div class="skills-card skills-card-wide">
+        <h3>Primary Skills</h3>
+
+        <div class="skills-split">
+          <div class="skill-group">
+            <h4>General skills</h4>
+
+            <div class="skill-list">
+
+            <div class="skill-row">
+              <div class="skill-meta">
+                <span class="skill-name">Web development</span>
+                <span class="skill-years" data-start-year="2012"></span>
               </div>
-
-              <div class="row mb-3">
-                <div class="col-md-5">
-                  <p>Web development (11 years)</p>
-                </div>
-                <div class="col-md-7">
-                  <div class="progress progress-bar-striped" role="progressbar" aria-label="Web development" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">
-                    <div class="progress-bar bg-info progress-bar-striped progress-bar-animated" style="width: 90%">90%</div>
-                  </div>
-                </div>
-              </div>
-
-              <div class="row mb-3">
-                <div class="col-md-5">
-                  <p>Agile | Scrum | Kanban (11 years)</p>
-                </div>
-                <div class="col-md-7">
-                  <div class="progress progress-bar-striped" role="progressbar" aria-label="Agile | Scrum | Kanban" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" >
-                    <div class="progress-bar bg-info progress-bar-striped progress-bar-animated" style="width: 90%">90%</div>
-                  </div>
-                </div>
-              </div>
-
-              <div class="row mb-3">
-                <div class="col-md-5">
-                  <p>Jira | Trello | Asana | Notion (9 years)</p>
-                </div>
-                <div class="col-md-7">
-                  <div class="progress progress-bar-striped" role="progressbar" aria-label="Agile | Scrum | Kanban" aria-valuenow="00" aria-valuemin="0" aria-valuemax="100" >
-                    <div class="progress-bar bg-info progress-bar-striped progress-bar-animated" style="width: 80%">80%</div>
-                  </div>
-                </div>
-              </div>
-
-              <div class="row mb-3">
-                <div class="col-md-5">
-                  <p>Git (10 years)</p>
-                </div>
-                <div class="col-md-7">
-                  <div class="progress progress-bar-striped" role="progressbar" aria-label="Git" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" >
-                    <div class="progress-bar bg-info progress-bar-striped progress-bar-animated" style="width: 90%">90%</div>
-                  </div>
-                </div>
-              </div>
-
-              <div class="row mb-3">
-                <div class="col-md-5">
-                  <p>AWS (EC2 | RDS | S3 | Route 53 | Cloudfront | ECS | Cloudwatch) (8 years)</p>
-                </div>
-                <div class="col-md-7">
-                  <div class="progress progress-bar-striped" role="progressbar" aria-label="Twitter bootstrap | Materialize | Foundation" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" >
-                    <div class="progress-bar bg-info progress-bar-striped progress-bar-animated" style="width: 80%">80%</div>
-                  </div>
-                </div>
-              </div>
-
-              <div class="row mb-3">
-                <div class="col-md-5">
-                  <p>Heroku | Digital Ocean | Azure (10 years)</p>
-                </div>
-                <div class="col-md-7">
-                  <div class="progress progress-bar-striped" role="progressbar" aria-label="Heroku | Digital Ocean | Azure" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" >
-                    <div class="progress-bar bg-info progress-bar-striped progress-bar-animated" style="width: 80%">80%</div>
-                  </div>
-                </div>
-              </div>
-
-              <div class="row mb-2">
-                <div class="col">
-                  <h4>Backend skills</h4>
-                </div>
-              </div>
-
-              <div class="row mb-3">
-                <div class="col-md-5">
-                  <p>Ruby (11 years)</p>
-                </div>
-                <div class="col-md-7">
-                  <div class="progress progress-bar-striped" role="progressbar" aria-label="Ruby" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" >
-                    <div class="progress-bar bg-info progress-bar-striped progress-bar-animated" style="width: 90%">90%</div>
-                  </div>
-                </div>
-              </div>
-
-              <div class="row mb-3">
-                <div class="col-md-5">
-                  <p>Ruby on Rails (11 years)</p>
-                </div>
-                <div class="col-md-7">
-                  <div class="progress progress-bar-striped" role="progressbar" aria-label="Ruby on Rails" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" >
-                    <div class="progress-bar bg-info progress-bar-striped progress-bar-animated" style="width: 90%">90%</div>
-                  </div>
-                </div>
-              </div>
-
-              <div class="row mb-3">
-                <div class="col-md-5">
-                  <p>Hanami (5 years)</p>
-                </div>
-                <div class="col-md-7">
-                  <div class="progress progress-bar-striped" role="progressbar" aria-label="Hanami" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" >
-                    <div class="progress-bar bg-info progress-bar-striped progress-bar-animated" style="width: 80%">80%</div>
-                  </div>
-                </div>
-              </div>
-
-              <div class="row mb-3">
-                <div class="col-md-5">
-                  <p>Rspec | Cucumber | Capybara (11 years)</p>
-                </div>
-                <div class="col-md-7">
-                  <div class="progress progress-bar-striped" role="progressbar" aria-label="Rspec" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" >
-                    <div class="progress-bar bg-info progress-bar-striped progress-bar-animated" style="width: 90%">90%</div>
-                  </div>
-                </div>
-              </div>
-
-              <div class="row mb-3">
-                <div class="col-md-5">
-                  <p>REST | SOAP (11 years)</p>
-                </div>
-                <div class="col-md-7">
-                  <div class="progress progress-bar-striped" role="progressbar" aria-label="REST | SOAP" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" >
-                    <div class="progress-bar bg-info progress-bar-striped progress-bar-animated" style="width: 90%">90%</div>
-                  </div>
-                </div>
-              </div>
-
-              <div class="row mb-3">
-                <div class="col-md-5">
-                  <p>Graphql (6 years)</p>
-                </div>
-                <div class="col-md-7">
-                  <div class="progress progress-bar-striped" role="progressbar" aria-label="Graphql" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" >
-                    <div class="progress-bar bg-info progress-bar-striped progress-bar-animated" style="width: 80%">80%</div>
-                  </div>
-                </div>
-              </div>
-
-              <div class="row mb-3">
-                <div class="col-md-5">
-                  <p>API | Web services (11 years)</p>
-                </div>
-                <div class="col-md-7">
-                  <div class="progress progress-bar-striped" role="progressbar" aria-label="Andriod Development" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" >
-                    <div class="progress-bar bg-info progress-bar-striped progress-bar-animated" style="width: 90%">90%</div>
-                  </div>
-                </div>
-              </div>
-
-              <div class="row mb-3">
-                <div class="col-md-5">
-                  <p>Mysql | Postgres | Sqlite | Cassandra | Mariadb (11 years)</p>
-                </div>
-                <div class="col-md-7">
-                  <div class="progress progress-bar-striped" role="progressbar" aria-label="Mysql | Postgres | Sqlite | Cassandra | Mariadb" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" >
-                    <div class="progress-bar bg-info progress-bar-striped progress-bar-animated" style="width: 80%">80%</div>
-                  </div>
-                </div>
+              <div class="skill-bar" role="progressbar" aria-label="Web development" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">
+                <span style="width: 90%">90%</span>
               </div>
             </div>
 
-            <div class="col">
-              <div class="row mb-2">
-                <div class="col">
-                  <h4>Frontend skills</h4>
-                </div>
+            <div class="skill-row">
+              <div class="skill-meta">
+                <span class="skill-name">Agile | Scrum | Kanban</span>
+                <span class="skill-years" data-start-year="2012"></span>
               </div>
+              <div class="skill-bar" role="progressbar" aria-label="Agile | Scrum | Kanban" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">
+                <span style="width: 90%">90%</span>
+              </div>
+            </div>
 
-              <div class="row mb-3">
-                <div class="col-md-5">
-                  <p>Nodejs (5 years)</p>
-                </div>
-                <div class="col-md-7">
-                  <div class="progress progress-bar-striped" role="progressbar" aria-label="React Js" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" >
-                    <div class="progress-bar bg-info progress-bar-striped progress-bar-animated" style="width: 80%">80%</div>
-                  </div>
-                </div>
+            <div class="skill-row">
+              <div class="skill-meta">
+                <span class="skill-name">Jira | Trello | Asana | Notion</span>
+                <span class="skill-years" data-start-year="2014"></span>
               </div>
+              <div class="skill-bar" role="progressbar" aria-label="Jira | Trello | Asana | Notion" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">
+                <span style="width: 80%">80%</span>
+              </div>
+            </div>
 
-              <div class="row mb-3">
-                <div class="col-md-5">
-                  <p>Typescript | ES6 (5 years)</p>
-                </div>
-                <div class="col-md-7">
-                  <div class="progress progress-bar-striped" role="progressbar" aria-label="Typescript | ES6" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" >
-                    <div class="progress-bar bg-info progress-bar-striped progress-bar-animated" style="width: 80%">80%</div>
-                  </div>
-                </div>
+            <div class="skill-row">
+              <div class="skill-meta">
+                <span class="skill-name">Git</span>
+                <span class="skill-years" data-start-year="2012"></span>
               </div>
+              <div class="skill-bar" role="progressbar" aria-label="Git" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">
+                <span style="width: 90%">90%</span>
+              </div>
+            </div>
 
-              <div class="row mb-3">
-                <div class="col-md-5">
-                  <p>React Js (7 years)</p>
-                </div>
-                <div class="col-md-7">
-                  <div class="progress progress-bar-striped" role="progressbar" aria-label="React Js" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" >
-                    <div class="progress-bar bg-info progress-bar-striped progress-bar-animated" style="width: 80%">80%</div>
-                  </div>
-                </div>
+            <div class="skill-row">
+              <div class="skill-meta">
+                <span class="skill-name">AWS (EC2 | RDS | S3 | Route 53 | Cloudfront | ECS | Cloudwatch)</span>
+                <span class="skill-years" data-start-year="2014"></span>
               </div>
+              <div class="skill-bar" role="progressbar" aria-label="AWS" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">
+                <span style="width: 80%">80%</span>
+              </div>
+            </div>
 
-              <div class="row mb-3">
-                <div class="col-md-5">
-                  <p>Angular Js (5 years)</p>
-                </div>
-                <div class="col-md-7">
-                  <div class="progress progress-bar-striped" role="progressbar" aria-label="React Js" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" >
-                    <div class="progress-bar bg-info progress-bar-striped progress-bar-animated" style="width: 80%">80%</div>
-                  </div>
-                </div>
+            <div class="skill-row">
+              <div class="skill-meta">
+                <span class="skill-name">Heroku | Digital Ocean | Azure</span>
+                <span class="skill-years" data-start-year="2013"></span>
               </div>
-
-              <div class="row mb-3">
-                <div class="col-md-5">
-                  <p>Vue Js (5 years)</p>
-                </div>
-                <div class="col-md-7">
-                  <div class="progress progress-bar-striped" role="progressbar" aria-label="React Js" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" >
-                    <div class="progress-bar bg-info progress-bar-striped progress-bar-animated" style="width: 80%">80%</div>
-                  </div>
-                </div>
+              <div class="skill-bar" role="progressbar" aria-label="Heroku | Digital Ocean | Azure" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">
+                <span style="width: 80%">80%</span>
               </div>
-
-              <div class="row mb-3">
-                <div class="col-md-5">
-                  <p>Jest | Jasminejs (5 years)</p>
-                </div>
-                <div class="col-md-7">
-                  <div class="progress progress-bar-striped" role="progressbar" aria-label="Jest | Jasminejs" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" >
-                    <div class="progress-bar bg-info progress-bar-striped progress-bar-animated" style="width: 80%">80%</div>
-                  </div>
-                </div>
-              </div>
-
-              <div class="row mb-3">
-                <div class="col-md-5">
-                  <p>Html | Html5 (11 years)</p>
-                </div>
-                <div class="col-md-7">
-                  <div class="progress progress-bar-striped" role="progressbar" aria-label="Html" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" >
-                    <div class="progress-bar bg-info progress-bar-striped progress-bar-animated" style="width: 90%">90%</div>
-                  </div>
-                </div>
-              </div>
-
-              <div class="row mb-3">
-                <div class="col-md-5">
-                  <p>Css | Css3 | Less | Scss | Sass (11 years)</p>
-                </div>
-                <div class="col-md-7">
-                  <div class="progress progress-bar-striped" role="progressbar" aria-label="Css | Scss | Sass" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" >
-                    <div class="progress-bar bg-info progress-bar-striped progress-bar-animated" style="width: 90%">90%</div>
-                  </div>
-                </div>
-              </div>
-
-              <div class="row mb-3">
-                <div class="col-md-5">
-                  <p>Javascript | Jquery (11 years)</p>
-                </div>
-                <div class="col-md-7">
-                  <div class="progress progress-bar-striped" role="progressbar" aria-label="Javascript" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" >
-                    <div class="progress-bar bg-info progress-bar-striped progress-bar-animated" style="width: 90%">90%</div>
-                  </div>
-                </div>
-              </div>
-
-              <div class="row mb-3">
-                <div class="col-md-5">
-                  <p>Twitter bootstrap | Materialize | Foundation (9 years)</p>
-                </div>
-                <div class="col-md-7">
-                  <div class="progress progress-bar-striped" role="progressbar" aria-label="Twitter bootstrap | Materialize | Foundation" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" >
-                    <div class="progress-bar bg-info progress-bar-striped progress-bar-animated" style="width: 90%">90%</div>
-                  </div>
-                </div>
-              </div>
-
-              <div class="row mb-2">
-                <div class="col">
-                  <h4>Automation skills</h4>
-                </div>
-              </div>
-
-              <div class="row mb-3">
-                <div class="col-md-5">
-                  <p>CI/CD (6 years)</p>
-                </div>
-                <div class="col-md-7">
-                  <div class="progress progress-bar-striped" role="progressbar" aria-label="CI/CD" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" >
-                    <div class="progress-bar bg-info progress-bar-striped progress-bar-animated" style="width: 70%">70%</div>
-                  </div>
-                </div>
-              </div>
-
-              <div class="row mb-3">
-                <div class="col-md-5">
-                  <p>Github Actions (1 years)</p>
-                </div>
-                <div class="col-md-7">
-                  <div class="progress progress-bar-striped" role="progressbar" aria-label="Github Actions" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" >
-                    <div class="progress-bar bg-info progress-bar-striped progress-bar-animated" style="width: 70%">70%</div>
-                  </div>
-                </div>
-              </div>
-
-              <div class="row mb-3">
-                <div class="col-md-5">
-                  <p>Bash scripting (5 years)</p>
-                </div>
-                <div class="col-md-7">
-                  <div class="progress progress-bar-striped" role="progressbar" aria-label="Bash scripting" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" >
-                    <div class="progress-bar bg-info progress-bar-striped progress-bar-animated" style="width: 80%">80%</div>
-                  </div>
-                </div>
-              </div>
+            </div>
             </div>
           </div>
 
-          <div class="row mb-5 mt-5">
-            <div class="col">
-              <h3>Secondary Skills</h3>
+          <div class="skill-group">
+            <h4>Backend skills</h4>
+
+            <div class="skill-list">
+
+            <div class="skill-row">
+              <div class="skill-meta">
+                <span class="skill-name">Ruby | Ruby on Rails | API | Web services</span>
+                <span class="skill-years" data-start-year="2012"></span>
+              </div>
+              <div class="skill-bar" role="progressbar" aria-label="Ruby | Ruby on Rails | API | Web services" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">
+                <span style="width: 90%">90%</span>
+              </div>
+            </div>
+
+            <div class="skill-row">
+              <div class="skill-meta">
+                <span class="skill-name">Hanami</span>
+                <span class="skill-years" data-start-year="2012"></span>
+              </div>
+              <div class="skill-bar" role="progressbar" aria-label="Hanami" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">
+                <span style="width: 80%">80%</span>
+              </div>
+            </div>
+
+            <div class="skill-row">
+              <div class="skill-meta">
+                <span class="skill-name">Rspec | Cucumber | Capybara</span>
+                <span class="skill-years" data-start-year="2012"></span>
+              </div>
+              <div class="skill-bar" role="progressbar" aria-label="Rspec | Cucumber | Capybara" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">
+                <span style="width: 90%">90%</span>
+              </div>
+            </div>
+
+            <div class="skill-row">
+              <div class="skill-meta">
+                <span class="skill-name">REST | SOAP</span>
+                <span class="skill-years" data-start-year="2012"></span>
+              </div>
+              <div class="skill-bar" role="progressbar" aria-label="REST | SOAP" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">
+                <span style="width: 90%">90%</span>
+              </div>
+            </div>
+
+            <div class="skill-row">
+              <div class="skill-meta">
+                <span class="skill-name">GraphQL</span>
+                <span class="skill-years" data-start-year="2012"></span>
+              </div>
+              <div class="skill-bar" role="progressbar" aria-label="GraphQL" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">
+                <span style="width: 80%">80%</span>
+              </div>
+            </div>
+
+            <div class="skill-row">
+              <div class="skill-meta">
+                <span class="skill-name">Mysql | Postgres | Sqlite | Cassandra | Mariadb</span>
+                <span class="skill-years">10 years</span>
+              </div>
+              <div class="skill-bar" role="progressbar" aria-label="Mysql | Postgres | Sqlite | Cassandra | Mariadb" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">
+                <span style="width: 80%">80%</span>
+              </div>
+            </div>
             </div>
           </div>
 
-          <div class="row">
-            <div class="col">
-              <div class="row mb-3">
-                <div class="col-md-5">
-                  <p>Elixir | Phoenix (1 years)</p>
-                </div>
-                <div class="col-md-7">
-                  <div class="progress progress-bar-striped" role="progressbar" aria-label="Elixir" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" >
-                    <div class="progress-bar bg-info progress-bar-striped progress-bar-animated" style="width: 50%">50%</div>
-                  </div>
-                </div>
-              </div>
+          <div class="skill-group">
+            <h4>Frontend skills</h4>
 
-              <div class="row mb-3">
-                <div class="col-md-5">
-                  <p>Java (5 years)</p>
-                </div>
-                <div class="col-md-7">
-                  <div class="progress progress-bar-striped" role="progressbar" aria-label="Java" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" >
-                    <div class="progress-bar bg-info progress-bar-striped progress-bar-animated" style="width: 70%">70%</div>
-                  </div>
-                </div>
-              </div>
+            <div class="skill-list">
 
-              <div class="row mb-3">
-                <div class="col-md-5">
-                  <p>Android Development (5 years)</p>
-                </div>
-                <div class="col-md-7">
-                  <div class="progress progress-bar-striped" role="progressbar" aria-label="Andriod Development" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" >
-                    <div class="progress-bar bg-info progress-bar-striped progress-bar-animated" style="width: 70%">70%</div>
-                  </div>
-                </div>
+            <div class="skill-row">
+              <div class="skill-meta">
+                <span class="skill-name">Nodejs | Typescript | ES6</span>
+                <span class="skill-years" data-start-year="2016"></span>
               </div>
-
-              <div class="row mb-3">
-                <div class="col-md-5">
-                  <p>Svn (1 years)</p>
-                </div>
-                <div class="col-md-7">
-                  <div class="progress progress-bar-striped" role="progressbar" aria-label="Svn" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" >
-                    <div class="progress-bar bg-info progress-bar-striped progress-bar-animated" style="width: 80%">80%</div>
-                  </div>
-                </div>
-              </div>
-
-              <div class="row mb-3">
-                <div class="col-md-5">
-                  <p>Docker | Kubernetes | Helm (5 years)</p>
-                </div>
-                <div class="col-md-7">
-                  <div class="progress progress-bar-striped" role="progressbar" aria-label="Docker | Kubernetes | Helm" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" >
-                    <div class="progress-bar bg-info progress-bar-striped progress-bar-animated" style="width: 70%">70%</div>
-                  </div>
-                </div>
+              <div class="skill-bar" role="progressbar" aria-label="Nodejs" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">
+                <span style="width: 80%">80%</span>
               </div>
             </div>
 
-            <div class="col">
-              <div class="row mb-3">
-                <div class="col-md-5">
-                  <p>Vagrant | Virtualbox (8 years)</p>
-                </div>
-                <div class="col-md-7">
-                  <div class="progress progress-bar-striped" role="progressbar" aria-label="Vagrant | Virtualbox" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" >
-                    <div class="progress-bar bg-info progress-bar-striped progress-bar-animated" style="width: 80%">80%</div>
-                  </div>
-                </div>
+            <div class="skill-row">
+              <div class="skill-meta">
+                <span class="skill-name">React Js</span>
+                <span class="skill-years" data-start-year="2016"></span>
               </div>
+              <div class="skill-bar" role="progressbar" aria-label="React Js" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">
+                <span style="width: 80%">80%</span>
+              </div>
+            </div>
 
-              <div class="row mb-3">
-                <div class="col-md-5">
-                  <p>Shopify | Shopify API | Shopify App development (2 years)</p>
-                </div>
-                <div class="col-md-7">
-                  <div class="progress progress-bar-striped" role="progressbar" aria-label="Shopify" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" >
-                    <div class="progress-bar bg-info progress-bar-striped progress-bar-animated" style="width: 70%">70%</div>
-                  </div>
-                </div>
+            <div class="skill-row">
+              <div class="skill-meta">
+                <span class="skill-name">Angular Js | Vue Js | Jest | Jasminejs</span>
+                <span class="skill-years">5 years</span>
               </div>
+              <div class="skill-bar" role="progressbar" aria-label="Angular Js" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">
+                <span style="width: 80%">80%</span>
+              </div>
+            </div>
 
-              <div class="row mb-3">
-                <div class="col-md-5">
-                  <p>Python (2 years)</p>
-                </div>
-                <div class="col-md-7">
-                  <div class="progress progress-bar-striped" role="progressbar" aria-label="Andriod Development" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" >
-                    <div class="progress-bar bg-info progress-bar-striped progress-bar-animated" style="width: 60%">60%</div>
-                  </div>
-                </div>
+            <div class="skill-row">
+              <div class="skill-meta">
+                <span class="skill-name">Html | Html5 | Css | Css3 | Less | Scss | Sass</span>
+                <span class="skill-years" data-start-year="2014"></span>
               </div>
+              <div class="skill-bar" role="progressbar" aria-label="Css | Css3 | Less | Scss | Sass" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">
+                <span style="width: 90%">90%</span>
+              </div>
+            </div>
 
-              <div class="row mb-3">
-                <div class="col-md-5">
-                  <p>PHP (5 years)</p>
-                </div>
-                <div class="col-md-7">
-                  <div class="progress progress-bar-striped" role="progressbar" aria-label="PHP" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" >
-                    <div class="progress-bar bg-info progress-bar-striped progress-bar-animated" style="width: 70%">70%</div>
-                  </div>
-                </div>
+            <div class="skill-row">
+              <div class="skill-meta">
+                <span class="skill-name">Javascript | Jquery</span>
+                <span class="skill-years" data-start-year="2012"></span>
               </div>
+              <div class="skill-bar" role="progressbar" aria-label="Javascript | Jquery" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">
+                <span style="width: 90%">90%</span>
+              </div>
+            </div>
 
-              <div class="row mb-3">
-                <div class="col-md-5">
-                  <p>Laravel (5 years)</p>
-                </div>
-                <div class="col-md-7">
-                  <div class="progress progress-bar-striped" role="progressbar" aria-label="Laravel" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" >
-                    <div class="progress-bar bg-info progress-bar-striped progress-bar-animated" style="width: 70%">70%</div>
-                  </div>
-                </div>
+            <div class="skill-row">
+              <div class="skill-meta">
+                <span class="skill-name">Twitter bootstrap | Materialize | Foundation</span>
+                <span class="skill-years" data-start-year="2014"></span>
               </div>
+              <div class="skill-bar" role="progressbar" aria-label="Twitter bootstrap | Materialize | Foundation" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">
+                <span style="width: 90%">90%</span>
+              </div>
+            </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="skills-card skills-card-wide">
+        <div class="skills-card-header">
+          <h3>Secondary Skills</h3>
+          <span class="skills-tag">Supporting tools</span>
+        </div>
+
+        <div class="skills-two-col">
+          <div class="skill-group">
+            <div class="skill-list">
+            <div class="skill-row">
+              <div class="skill-meta">
+                <span class="skill-name">Elixir | Phoenix</span>
+                <span class="skill-years">1 year</span>
+              </div>
+              <div class="skill-bar" role="progressbar" aria-label="Elixir | Phoenix" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">
+                <span style="width: 50%">50%</span>
+              </div>
+            </div>
+
+            <div class="skill-row">
+              <div class="skill-meta">
+                <span class="skill-name">Java</span>
+                <span class="skill-years">5 years</span>
+              </div>
+              <div class="skill-bar" role="progressbar" aria-label="Java" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">
+                <span style="width: 70%">70%</span>
+              </div>
+            </div>
+
+            <div class="skill-row">
+              <div class="skill-meta">
+                <span class="skill-name">Android Development</span>
+                <span class="skill-years">5 years</span>
+              </div>
+              <div class="skill-bar" role="progressbar" aria-label="Android Development" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">
+                <span style="width: 70%">70%</span>
+              </div>
+            </div>
+
+            <div class="skill-row">
+              <div class="skill-meta">
+                <span class="skill-name">Svn</span>
+                <span class="skill-years">1 year</span>
+              </div>
+              <div class="skill-bar" role="progressbar" aria-label="Svn" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">
+                <span style="width: 80%">80%</span>
+              </div>
+            </div>
+
+            <div class="skill-row">
+              <div class="skill-meta">
+                <span class="skill-name">Docker | Kubernetes | Helm</span>
+                <span class="skill-years">5 years</span>
+              </div>
+              <div class="skill-bar" role="progressbar" aria-label="Docker | Kubernetes | Helm" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">
+                <span style="width: 70%">70%</span>
+              </div>
+            </div>
             </div>
           </div>
 
+          <div class="skill-group">
+            <div class="skill-list">
+            <div class="skill-row">
+              <div class="skill-meta">
+                <span class="skill-name">Vagrant | Virtualbox</span>
+                <span class="skill-years">8 years</span>
+              </div>
+              <div class="skill-bar" role="progressbar" aria-label="Vagrant | Virtualbox" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">
+                <span style="width: 80%">80%</span>
+              </div>
+            </div>
+
+            <div class="skill-row">
+              <div class="skill-meta">
+                <span class="skill-name">Shopify | Shopify API | Shopify App development</span>
+                <span class="skill-years">2 years</span>
+              </div>
+              <div class="skill-bar" role="progressbar" aria-label="Shopify" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">
+                <span style="width: 70%">70%</span>
+              </div>
+            </div>
+
+            <div class="skill-row">
+              <div class="skill-meta">
+                <span class="skill-name">Python</span>
+                <span class="skill-years">2 years</span>
+              </div>
+              <div class="skill-bar" role="progressbar" aria-label="Python" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">
+                <span style="width: 60%">60%</span>
+              </div>
+            </div>
+
+            <div class="skill-row">
+              <div class="skill-meta">
+                <span class="skill-name">PHP</span>
+                <span class="skill-years">5 years</span>
+              </div>
+              <div class="skill-bar" role="progressbar" aria-label="PHP" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">
+                <span style="width: 70%">70%</span>
+              </div>
+            </div>
+
+            <div class="skill-row">
+              <div class="skill-meta">
+                <span class="skill-name">Laravel</span>
+                <span class="skill-years">5 years</span>
+              </div>
+              <div class="skill-bar" role="progressbar" aria-label="Laravel" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">
+                <span style="width: 70%">70%</span>
+              </div>
+            </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -691,185 +698,221 @@
 
 <div class="my-work dark section" id="works">
   <div class="container">
-    <div class="row">
-      <div class="col text-center">
-        <h1 class="white-title mb-5 title">Projects I worked on</h1>
+    <div class="row mb-5 align-items-end">
+      <div class="col-lg-7">
+        <p class="eyebrow">Work</p>
+        <h1 class="white-title title mb-3">Platforms I Have Built</h1>
+        <p class="work-lede">A spectrum of real-world platforms, from consumer apps to enterprise systems, shipped with reliability and polish.</p>
+      </div>
+      <div class="col-lg-5 text-lg-end">
+        <div class="work-callout">Product + Platform Delivery</div>
+      </div>
+    </div>
 
-        <div class="row mb-5">
-          <dv class="col lg-text">
-            <p>Brochure websites</p>
-          </dv>
-
-          <div class="col sm-text">
-            <p>GPS tracking application</p>
-          </div>
-
-          <div class="col sm-text">
-            <p>Telco sim management application</p>
-          </div>
+    <div class="work-grid">
+      <div class="work-card">
+        <span class="work-tag">Marketing</span>
+        <h4>Brand & campaign platforms</h4>
+        <div class="work-items">
+          <span>Brochure websites</span>
+          <span>Events and campaign apps</span>
+          <span>Learning and educational platforms</span>
         </div>
+      </div>
 
-        <div class="row mb-5">
-          <div class="col lg-text">
-            <p>Mortgage application</p>
-          </div>
-
-          <div class="col md-text">
-            <p>Brokers and loan applications</p>
-          </div>
+      <div class="work-card">
+        <span class="work-tag">Logistics</span>
+        <h4>Mobility & tracking systems</h4>
+        <div class="work-items">
+          <span>GPS tracking applications</span>
+          <span>Cargo shipment tracking</span>
+          <span>Map-based ride-hailing and delivery</span>
         </div>
+      </div>
 
-        <div class="row mb-5">
-          <div class="col sm-text">
-            <p>Learning and Educational platforms</p>
-          </div>
-
-          <div class="col md-text">
-            <p>Bank and Loyalty platform</p>
-          </div>
-
-          <div class="col sm-text">
-            <p>Clinical Reservation application</p>
-          </div>
+      <div class="work-card">
+        <span class="work-tag">Fintech</span>
+        <h4>Finance and loyalty products</h4>
+        <div class="work-items">
+          <span>Mortgage platforms</span>
+          <span>Brokers and loan applications</span>
+          <span>Bank and loyalty systems</span>
         </div>
+      </div>
 
-        <div class="row mb-5">
-          <div class="col sm-text">
-            <p>Schedule and appointment applications</p>
-          </div>
-
-          <div class="col lg-text">
-            <p>Events and campaign apps</p>
-          </div>
+      <div class="work-card">
+        <span class="work-tag">Healthcare</span>
+        <h4>Scheduling & clinical systems</h4>
+        <div class="work-items">
+          <span>Clinical reservation applications</span>
+          <span>Schedule and appointment tools</span>
         </div>
+      </div>
 
-        <div class="row mb-5">
-          <div class="col sm-text">
-            <p>Market research application</p>
-          </div>
-
-          <div class="col lg-text">
-            <p>File management application</p>
-          </div>
-
-          <div class="col md-text">
-            <p>Cargo shipment tracking application</p>
-          </div>
+      <div class="work-card">
+        <span class="work-tag">Operations</span>
+        <h4>Enterprise management tools</h4>
+        <div class="work-items">
+          <span>Telco SIM management</span>
+          <span>File management platforms</span>
+          <span>Market research applications</span>
         </div>
+      </div>
 
-        <div class="row">
-          <div class="col sm-text">
-            <p>Map based ride-hailing, food, grocery and package delivery, and financial applications</p>
-          </div>
-
-          <div class="col md-text">
-            <p>E-commerce</p>
-          </div>
+      <div class="work-card">
+        <span class="work-tag">Commerce</span>
+        <h4>Digital retail experiences</h4>
+        <div class="work-items">
+          <span>E-commerce platforms</span>
+          <span>Food, grocery, and package delivery</span>
         </div>
-
       </div>
     </div>
   </div>
 </div>
 
-<div class="my-work section">
+<div class="my-work section work-locations">
   <div class="container">
-    <div class="row">
-      <div class="col text-center">
-        <h1 class="black-title mb-5 title">Location of the Companies / Clients I worked with</h1>
+    <div class="row mb-5 align-items-end">
+      <div class="col-lg-8">
+        <p class="eyebrow">Global</p>
+        <h1 class="black-title title mb-3">Client Footprint</h1>
+        <p class="work-lede text-dark">Collaborations across North America, Europe, Asia, and Oceania.</p>
+      </div>
+    </div>
 
-        <div class="row">
-          <div class="col pb-5 pt-5">
-            <img src="/assets/images/ph.jpg" alt="Philippines" />
+    <div class="flag-slider" aria-label="Client footprint slider">
+      <button class="flag-slider-btn flag-slider-prev" type="button" aria-label="Previous countries">&#8592;</button>
+      <div class="flag-slider-viewport">
+        <div class="flag-slider-track">
+          <div class="flag-slide">
+            <div class="flag-tile">
+              <img src="/assets/images/ph.jpg" alt="Philippines" />
+              <span>Philippines</span>
+            </div>
+            <div class="flag-tile">
+              <img src="/assets/images/us.jpg" alt="United States" />
+              <span>United States</span>
+            </div>
+            <div class="flag-tile">
+              <img src="/assets/images/fr.jpg" alt="France" />
+              <span>France</span>
+            </div>
           </div>
-
-          <div class="col pb-5 pt-5">
-            <img src="/assets/images/us.jpg" alt="US" />
+          <div class="flag-slide">
+            <div class="flag-tile">
+              <img src="/assets/images/au.jpg" alt="Australia" />
+              <span>Australia</span>
+            </div>
+            <div class="flag-tile">
+              <img src="/assets/images/nl.jpg" alt="Netherlands" />
+              <span>Netherlands</span>
+            </div>
+            <div class="flag-tile">
+              <img src="/assets/images/uk.jpg" alt="United Kingdom" />
+              <span>United Kingdom</span>
+            </div>
           </div>
-
-          <div class="col pb-5 pt-5">
-            <img src="/assets/images/fr.jpg" alt="France" />
+          <div class="flag-slide">
+            <div class="flag-tile">
+              <img src="/assets/images/jp.jpg" alt="Japan" />
+              <span>Japan</span>
+            </div>
+            <div class="flag-tile">
+              <img src="/assets/images/sg.jpg" alt="Singapore" />
+              <span>Singapore</span>
+            </div>
+            <div class="flag-tile">
+              <img src="/assets/images/is.jpg" alt="Israel" />
+              <span>Israel</span>
+            </div>
           </div>
         </div>
-
-        <div class="row">
-          <div class="col pb-5 pt-5">
-            <img src="/assets/images/au.jpg" alt="Australia" />
-          </div>
-
-          <div class="col pb-5 pt-5">
-            <img src="/assets/images/nl.jpg" alt="Netherlands" />
-          </div>
-        </div>
-
-        <div class="row">
-          <div class="col pb-5 pt-5">
-            <img src="/assets/images/uk.jpg" alt="UK" />
-          </div>
-
-          <div class="col pb-5 pt-5">
-            <img src="/assets/images/jp.jpg" alt="Japan" />
-          </div>
-
-          <div class="col pb-5 pt-5">
-            <img src="/assets/images/sg.jpg" alt="Singapore" />
-          </div>
-
-          <div class="col pb-5 pt-5">
-            <img src="/assets/images/is.jpg" alt="Israel" />
-          </div>
-        </div>
-
+      </div>
+      <button class="flag-slider-btn flag-slider-next" type="button" aria-label="Next countries">&#8594;</button>
+      <div class="flag-slider-dots" role="tablist" aria-label="Client footprint slides">
+        <button class="flag-slider-dot is-active" type="button" data-slide="0" aria-label="Slide 1" aria-pressed="true"></button>
+        <button class="flag-slider-dot" type="button" data-slide="1" aria-label="Slide 2" aria-pressed="false"></button>
+        <button class="flag-slider-dot" type="button" data-slide="2" aria-label="Slide 3" aria-pressed="false"></button>
       </div>
     </div>
   </div>
 </div>
 <div class="my-location dark section" id="location">
   <div class="container">
-    <div class="row">
-      <div class="col-md-12">
-        <h1 class="white-title title mb-5">Where am I located</h1>
+    <div class="row mb-5 align-items-end">
+      <div class="col-lg-7">
+        <p class="eyebrow">Location</p>
+        <h1 class="white-title title mb-3">Based in the Philippines</h1>
+        <p class="location-lede">Remote-first collaboration with global teams, anchored in a disciplined routine and consistent delivery.</p>
+      </div>
+      <div class="col-lg-5 text-lg-end">
+        <div class="location-callout">Remote + On-site meetups</div>
+      </div>
+    </div>
 
-        <div class="row">
-          <div class="col-md-4 text-center mb-5">
-            <img src="/assets/images/loc.png" class="ph-loc" alt="Philippines" />
-          </div>
-          <div class="col-md-8">
-            <p class="text-content">I am based in the <span>Philippines</span>, I mostly work remotely and working from home. I visit coffeeshop sometimes to change ambience and had some coffee and continue to do my thing.</p>
-            <p class="text-content">I am comfortable working from home and not coming in the office. I collaborate with the team online through slack, google meet, zoom or any other online communication platform.</p>
-            <p class="text-content">I started working remotely when my third work offer work from home and during that time I discover that working out of the office will still work and productive.</p>
-            <p class="text-content">Work, schedule meetups sometimes to meet the team face to face and have bonding with them, talk about our stuff, collaborate closely and have some meals and after party after work.  </p>
-            <p class="text-content">When covid19 arise which changed most of our day to day routine, during that time I wasn't got affected as I am used to worked at home and not dealing with long hours of commuting and travel to office. I am still productive and still up to speed to deliver work.</p>
-            <p class="text-content">Working from home is big challenge at the start, but in the long run I was able to disciplined myself and organized my day to day routine and learned to balance my work hours and personal hours.</p>
-          </div>
+    <div class="location-collage">
+      <div class="location-main">
+        <div class="collage-tile collage-map">
+          <img src="/assets/images/loc.png" alt="Philippines map" />
+        </div>
+
+        <div class="location-panel">
+          <p class="text-content">Based in the <span>Philippines</span>, I lead remote-first delivery with a structured cadence that protects deep focus while keeping teams in sync.</p>
+          <p class="text-content">I partner seamlessly across time zones using Slack, Google Meet, Zoom, and async updates to keep projects clear, fast, and accountable.</p>
+          <p class="text-content">I am equally comfortable with remote execution and periodic on-site workshops for alignment, planning, and high-impact collaboration.</p>
+        </div>
+      </div>
+
+      <div class="location-grid-collage">
+        <div class="collage-tile collage-tag">
+          <span>GMT+8</span>
+          <p>Primary timezone</p>
+        </div>
+        <div class="collage-tile collage-tag">
+          <span>Remote-first</span>
+          <p>Distributed teams</p>
+        </div>
+        <div class="collage-tile collage-tag">
+          <span>Hybrid-ready</span>
+          <p>On-site meetups</p>
+        </div>
+        <div class="collage-tile collage-tag">
+          <span>Focus mode</span>
+          <p>Deep work blocks</p>
         </div>
       </div>
     </div>
   </div>
 </div>
-<div class="my-location section" id="tools">
+<div class="my-tools section" id="tools">
   <div class="container">
     <div class="row">
       <div class="col-md-12">
+        <p class="eyebrow">Development Environment</p>
         <h1 class="black-title title mb-5">Tools I'm using</h1>
 
         <div class="row">
           <div class="col-md-7">
-            <p class="text-content">I am a mac user, I mostly work and finish my stuff using my favorite powerful macbook pro machine with extended monitor and with all the tech set installed that I need.</p>
-            <p class="text-content">I love working in a mac as it is durable and heavy duty which last for many years and can still keep up the system requirements of the tools that im using to develop apps.</p>
-            <p class="text-content">A quality works requires quality equipments which matched my quality works and output.</p>
+            <p class="text-content">I work on a MacBook Pro with an external monitor and a streamlined development setup optimized for speed and reliability.</p>
+            <p class="text-content">My environment is built to support long-lived projects, consistent performance, and clean delivery.</p>
 
-            <p class="text-content"><strong>Tech tools im using:</strong></p>
-            <p class="text-content">Im using sublime text 3 for my code editor sometimes rubymine or vscode.</p>
-            <p class="text-content">Im using iterm and ohmyzsh for commandline tools.</p>
-            <p class="text-content">Im using sequel pro and tableplus to navigate mysql or postgres databases.</p>
-            <p class="text-content">Im using google chrome (web) and postman (api) to run apps.</p>
-            <p class="text-content">Im mostly used slack, google meet and zoom to communicate at work and do meetings.</p>
+            <p class="text-content"><strong>Core tools:</strong></p>
+            <p class="text-content">Editors: VS Code and Cursor.</p>
+            <p class="text-content">AI assistants: GitHub Copilot, ChatGPT, and Claude for coding support and reviews.</p>
+            <p class="text-content">Terminal: iTerm with Oh My Zsh.</p>
+            <p class="text-content">Databases: Sequel Pro and TablePlus for MySQL and Postgres.</p>
+            <p class="text-content">QA: Chrome for web testing and Postman for APIs.</p>
+            <p class="text-content">Collaboration: Slack, Google Meet, and Zoom.</p>
           </div>
 
           <div class="col-md-5 d-flex align-items-center justify-content-center">
-            <div class="code-logo">
-              <p>{<span>{</span> & <span>}</span>}</p>
+            <div class="code-logo code-logo-dev">
+              <div class="code-line"><span class="code-key">const</span> toolkit = [</div>
+              <div class="code-line">  "VS Code", "Cursor", "Copilot",</div>
+              <div class="code-line">  "ChatGPT", "iTerm", "Postman",</div>
+              <div class="code-line">  "TablePlus", "Slack"</div>
+              <div class="code-line">];</div>
             </div>
           </div>
         </div>
@@ -877,31 +920,36 @@
     </div>
   </div>
 </div>
-<div class="my-location dark section" id="hire">
+<div class="my-hire section" id="hire">
   <div class="container">
-    <div class="row">
-      <div class="col-md-12">
-        <h1 class="white-title title mb-5">Hire me? Lets talk then.</h1>
+    <div class="hire-grid">
+      <div class="hire-content">
+        <p class="eyebrow">Lets Connect</p>
+        <h1 class="white-title title mb-4">Ready to build something ambitious?</h1>
+        <p class="text-content">If you need a senior engineer who can own delivery, unblock teams, and ship with quality, I would love to learn the scope and priorities.</p>
+        <p class="text-content">I move fast without sacrificing reliability, partner closely with product and design, and deliver production-ready work from discovery to launch.</p>
 
-        <div class="row">
-          <div class="col-md-5">
-            <div class="code-logo inverted code-logo-sm text-center">
-              <p>（＾<span>▽</span>＾）<span>／</span></p>
-            </div>
+        <div class="hire-actions">
+          <a href="https://www.linkedin.com/in/erwin-seribo-baab306a/" target="_blank" class="btn btn-outline-light btn-lg">Connect on LinkedIn</a>
+          <a href="mailto:erwin_rulezzz87@yahoo.com" class="btn btn-outline-light btn-lg">Send an email</a>
+        </div>
+      </div>
+
+      <div class="hire-panel">
+        <div class="hire-badge">Available for projects</div>
+        <div class="hire-code">
+          <div class="hire-line"><span>const</span> kickoff = "Discovery call";</div>
+          <div class="hire-line"><span>const</span> scope = ["MVP", "Roadmap", "Delivery"]; </div>
+          <div class="hire-line"><span>const</span> status = "Open";</div>
+        </div>
+        <div class="hire-metrics">
+          <div>
+            <p class="hire-kicker">Response</p>
+            <h4>24-48h</h4>
           </div>
-          <div class="col-md-7">
-            <p class="text-content">Did I matched the skillset that you are looking for your project or in your team?</p>
-            <p class="text-content">I will be happy to check out the opportunity and discuss next step.</p>
-            <p class="text-content">Lets connect on linkedin or shoot me email to discuss so I can learn the opportunity that you have.</p>
-
-            <div class="row mt-5">
-              <div class="col d-grid">
-                <a href="https://www.linkedin.com/in/erwin-seribo-baab306a/" target="_blank" class="btn btn-outline-light btn-lg">Lets connect on linkedin</a>
-              </div>
-              <div class="col d-grid">
-                <a href="mailto:erwin_rulezzz87@yahoo.com" class="btn btn-outline-light btn-lg">Send me email to discuss</a>
-              </div>
-            </div>
+          <div>
+            <p class="hire-kicker">Timezone</p>
+            <h4>GMT+8</h4>
           </div>
         </div>
       </div>
@@ -913,88 +961,57 @@
     <footer>
       <div class="footer-content">
   <div class="container">
-    <div class="row mb-5">
-      <div class="col-md-9 mb-5">
-        <div class="row">
-          <div class="col">
-            <h4>Links</h4>
-          </div>
+    <div class="footer-top">
+      <div class="footer-brand">
+        <a class="footer-logo" href="/" aria-label="Erwin Seribo">
+          <img src="/assets/images/logo.png" alt="Erwin Seribo" />
+        </a>
+        <p class="footer-tagline">Senior engineer delivering reliable, modern web platforms.</p>
+      </div>
+
+      <div class="footer-links">
+        <div class="footer-group">
+          <h4>Explore</h4>
+          <ul class="footer-list">
+            <li><a href="#about" class="scroll-to">About</a></li>
+            <li><a href="#career" class="scroll-to">Career</a></li>
+            <li><a href="#expertise" class="scroll-to">Expertise</a></li>
+            <li><a href="#skills" class="scroll-to">Skills</a></li>
+          </ul>
         </div>
-        <div class="row">
-          <div class="col">
-            <ul class="list-group list-group-flush">
-              <li class="list-group-item">
-                <a href="#about" class="scroll-to">About</a>
-              </li>
-              <li class="list-group-item">
-                <a href="#career" class="scroll-to">Career</a>
-              </li>
-            </ul>
-          </div>
-          <div class="col">
-            <ul class="list-group list-group-flush">
-              <li class="list-group-item">
-                <a href="#expertise" class="scroll-to">Expertise</a>
-              </li>
-              <li class="list-group-item">
-                <a href="#skills" class="scroll-to">Skills</a>
-              </li>
-            </ul>
-          </div>
-          <div class="col">
-            <ul class="list-group list-group-flush">
-              <li class="list-group-item">
-                <a href="#works" class="scroll-to">Works</a>
-              </li>
-              <li class="list-group-item">
-                <a href="#location" class="scroll-to">Location</a>
-              </li>
-            </ul>
-          </div>
-          <div class="col">
-            <ul class="list-group list-group-flush">
-              <li class="list-group-item">
-                <a href="#tools" class="scroll-to">Tools</a>
-              </li>
-              <li class="list-group-item">
-                <a href="#hire" class="scroll-to">Hire Me!</a>
-              </li>
-            </ul>
-          </div>
+        <div class="footer-group">
+          <h4>Projects</h4>
+          <ul class="footer-list">
+            <li><a href="#works" class="scroll-to">Works</a></li>
+            <li><a href="#location" class="scroll-to">Location</a></li>
+            <li><a href="#tools" class="scroll-to">Tools</a></li>
+            <li><a href="#hire" class="scroll-to">Hire Me</a></li>
+          </ul>
         </div>
       </div>
 
-      <div class="col-md-3 text-center">
-        <div class="row">
-          <div class="col mb-5">
-            <a class="navbar-brand p-0 me-0 me-lg-2" href="/" aria-label="Bootstrap">
-              <img src="/assets/images/logo.png" alt="Erwin Seribo" />
-            </a>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col">
-            <a class="nav-link  py-2 px-0 px-lg-2" href="https://www.linkedin.com/in/erwin-seribo-baab306a/" target="_blank">
-              <img src="/assets/images/linkedin.png" alt="Linkedin" />
-            </a>
-          </div>
-          <div class="col">
-            <a class="nav-link py-2 px-0 px-lg-2" href="https://github.com/rewin0087" target="_blank">
-              <img src="/assets/images/github.png" alt="Github" />
-            </a>
-          </div>
-          <div class="col">
-            <a class="nav-link py-2 px-0 px-lg-2" href="mailto:erwin_rulezzz87@yahoo.com">
-              <img src="/assets/images/email.png" alt="Send me email" />
-            </a>
-          </div>
+      <div class="footer-contact">
+        <h4>Lets Talk</h4>
+        <p>Open to senior engineering roles and project-based collaborations.</p>
+        <div class="footer-cta">
+          <a href="mailto:erwin_rulezzz87@yahoo.com" class="btn btn-outline-light">Email me</a>
+          <a href="https://www.linkedin.com/in/erwin-seribo-baab306a/" target="_blank" class="btn btn-outline-light">LinkedIn</a>
         </div>
       </div>
     </div>
 
-    <div class="row">
-      <div class="col text-center">
-        <p>© 2024 Copyright. All Rigts Reserved.</p>
+    <div class="footer-bottom">
+      <p>© <span class="current-year"></span> Erwin Seribo. All rights reserved.</p>
+      <div class="footer-socials">
+        <a href="https://www.linkedin.com/in/erwin-seribo-baab306a/" target="_blank" aria-label="LinkedIn">
+          <img src="/assets/images/linkedin.png" alt="Linkedin" />
+        </a>
+        <a href="https://github.com/rewin0087" target="_blank" aria-label="GitHub">
+          <img src="/assets/images/github.png" alt="Github" />
+        </a>
+        <a href="mailto:erwin_rulezzz87@yahoo.com" aria-label="Email">
+          <img src="/assets/images/email.png" alt="Send me email" />
+        </a>
       </div>
     </div>
   </div>
