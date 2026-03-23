@@ -5,10 +5,10 @@ const careerYears = function() {
   $('.exp-year, .skill-years').each(function() {
     var startYear = parseInt($(this).data('start-year'), 10) || 2012;
     var totalCareerYears = currentYear - startYear;
-    if ($(this).hasClass('skill-years')) {
+    if ($(this).hasClass('skill-years') && $(this).data('start-year') != undefined) {
       var label = totalCareerYears === 1 ? ' year' : ' years';
       $(this).html(totalCareerYears + label);
-    } else {
+    } else if ($(this).hasClass('exp-year')) {
       $(this).html(totalCareerYears);
     }
   });
